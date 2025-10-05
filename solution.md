@@ -2,9 +2,8 @@
 1. Differentiate the following functions.
 
 (a) $y=\sin ^{2} x$
+
 +++ Click me...
-
-
 $$
 \begin{aligned}
 \frac{d\left(\sin ^2 x\right)}{d x} & =\frac{d \sin x}{d x} \cdot 2 \cdot \sin x \\
@@ -22,6 +21,7 @@ chain Rule.
 
 Hello, world!
 +++
+
 (b) $y=x^{2} \cos x$
 
 (c) $y=\frac{x}{\tan 2 x}$
