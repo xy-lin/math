@@ -1,0 +1,35 @@
+site_name: Our Maths Solutions
+nav:
+    - Home: index.md
+    - Integral Topic Accessment:
+      - Pure Year 2:
+        - Proof: './Pure Year 2/Proof/test.md'
+        - Trigonometry: './Pure Year 2/Trigonometry/test.md'
+        - Sequences and Series: './Pure Year 2/Sequences and Series/test.md'
+        - Functions: './Pure Year 2/Functions/test.md'
+        - Differentiation: './Pure Year 2/Differentiation/test.md'
+        - Trigonometry functions: './Pure Year 2/Trigonometry functions/test.md'
+        - Further differentiation: './Pure Year 2/Further differentiation/test.md'
+        - Integration: './Pure Year 2/Integration/test.md'
+        - Parametric equations: './Pure Year 2/Parametric equations/test.md'
+        - Vectors: './Pure Year 2/vectors/test.md'
+        - Differentiation equations: './Pure Year 2/Differentiation equations/test.md'
+        - Numerical methods: './Pure Year 2/Numerical methods/test.md'
+      - Mechanics Year 2:
+        - Kinematics: './Mechanics Year 2/Kinematics/test.md'
+        - Forces and motion: './Mechanics Year 2/ForcesMotion/test.md'
+        - Moments of forces: './Mechanics Year 2/Moments of forces/test.md'
+        - Projectiles: './Mechanics Year 2/Projectiles/test.md'
+        - Model for friction: './Mechanics Year 2/Model for friction/test.md'
+      - Statistics Year 2:
+        - Probability: './Statistics Year 2/Probability/test.md'
+        - Statistical distributions: './Statistics Year 2/Statistical distributions/test.md'
+        - Statistical hypothesis testing: './Statistics Year 2/Statistical hypothesis testing/test.md'
+    - Homeworks:
+      - Pure: './Homeworks/pure.md'
+      - Mechanics: './Homeworks/mechanics.md'
+      - Statistics: './Homeworks/statistics.md'
+    - Past Papers:
+      - 2024: './Past Papers/test.md'
+
+theme: readthedocs
