@@ -19,4 +19,5 @@ Add following config for "Run on Save" plugin to run the script to convert mmd t
             "cmd": "powershell -File c:\\develop\\projects\\IntegralSolution\\math\\convert.ps1"
         }
     ]
+  }
 ```
