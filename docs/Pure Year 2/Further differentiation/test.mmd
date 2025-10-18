@@ -1,12 +1,12 @@
-<div style="font-size: 20px;">
-
 <p align="center">
 <img src="/images/otter.jpg" alt="drawing" width="500"/>
 </p>
 
+<div style="font-size: 22px;">
+
 <br><br>
 
-1. **Differentiate the following functions.**
+1. **Differentiate the following functions**
 
 (a) $y=\sin ^{2} x$
 
@@ -16,28 +16,12 @@
 
 <hr style="border:1px solid red" >
 
-<br>
-<br>
+we apply chain rule
 
 \begin{equation}
 \begin{aligned}
-\frac{d\left(\sin ^2 x\right)}{d x} & =\frac{d \sin x }  {d x} \cdot 2 \cdot \sin x \\
-&=2 \cdot \sin x \cdot \cos x \\
-&=2 \sin (2 x)&&
-\end{aligned}
-\end{equation}
-
-<br>
-
-In equation (1), we apply chain rule That is so funny! :joy:
-<span style="color:red">some *red* text</span>.
-
-<br>
-
-\begin{equation}
-\begin{aligned}
-&y=\sin x \Rightarrow \frac{d y}{d x}=\cos x \\
-&y=x^2 \Rightarrow \frac{d\left(x^2\right)}{d x}=2 x
+function\ 1\ is:\ &y=\sin x \Rightarrow \frac{d y}{d x}=\cos x \\
+function\ 2\ is:\ &y=x^2 \Rightarrow \frac{d\left(x^2\right)}{d x}=2 x
 \end{aligned}
 \end{equation}
 
@@ -51,24 +35,11 @@ In equation (1), we apply chain rule That is so funny! :joy:
 
 <hr style="border:1px solid red" >
 
-<br>
-<br>
-
 \begin{equation}
 \begin{aligned}
-\frac{d\left(\sin ^2 x\right)}{d x} & =\frac{d \sin x }  {d x} \cdot 2 \cdot \sin x \\
+\frac{d\left(\sin ^2 x\right)}{d x} &= \frac{d \sin x }  {d x} \cdot 2 \cdot \sin x \\
 &=2 \cdot \sin x \cdot \cos x \\
 &=2 \sin (2 x)&&
-\end{aligned}
-\end{equation}
-
-<br>
-<br>
-
-\begin{equation}
-\begin{aligned}
-&y=\sin x \Rightarrow \frac{d y}{d x}=\cos x \\
-&y=x^2 \Rightarrow \frac{d\left(x^2\right)}{d x}=2 x
 \end{aligned}
 \end{equation}
 
@@ -76,14 +47,92 @@ In equation (1), we apply chain rule That is so funny! :joy:
 
 +++
 
-
 <br>
 
 (b) $y=x^{2} \cos x$
 
 <br>
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+we apply product rule
+
+\begin{equation}
+\begin{aligned}
+function\ 1\ is:\ &y=x^2 \\
+function\ 2\ is:\ &y=\cos x \\
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+\begin{equation}
+\begin{aligned}
+\frac{d(x^2\cos x)}{dx} &=\cos x \frac{dx^2}{dx} + x^2\frac{d(\cos x)}{dx} \\
+&=2 x \cos x + (-\sin x) x^2 \\
+&=2 x\cos x - x^2 \sin x&&
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 \((c)\) $y=\frac{x}{\tan 2 x}$
+
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+we first apply chain rule on $\tan (2x)$, then apply quotient rule:
+
+\begin{equation}
+\begin{aligned}
+function\ 1\ is:\ &y=x \\
+function\ 2\ is:\ &y=\tan (2x) \\
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+\begin{equation}
+\begin{aligned}
+\because\ \frac{d(tan(2x))}{dx} &=2\sec^{2} (2x) \\
+\therefore \frac{  d(\frac{x}{\tan 2x})  }{dx} &= \frac{\tan(2x)\frac{d(x)}{dx}-x\frac{\tan(2x)}{dx}}{\tan ^{2} 2x} \\
+&= \frac{\tan(2x) - x\cdot2\cdot\sec^{2}(2x)}{\tan ^{2} 2x} \\
+&= \frac{\tan(2x)}{\tan^{2}2x}-2x\cdot\frac{\sec^(2x)}{{\tan ^{2} 2x}}\\
+&= \frac{1}{\tan ^{2} 2x} - 2x\cdot\frac{1}{\cos^{2}(2x)}\cdot\frac{1}{\tan ^{2} (2x)}\\
+&= \cot(2x)-2x\cdot\frac{1}{\cos^{2}(2x)}\cdot\frac{\cos^{2}(2x)}{\sin^{2}(2x)}\\
+&= \cot(2x)-2x\cdot\csc(2x)&&
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
 
 <br>
 
@@ -91,6 +140,43 @@ In equation (1), we apply chain rule That is so funny! :joy:
 
 <br>
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+We can use chain rule:
+function 1 is: $y=a^x$
+function 2 is: $y=2 x^2$
+
+Remember the formula for differentiation of log of any base:
+\begin{equation}
+\begin{aligned}
+\frac{d\left(a^x\right)}{d x}=a^x \cdot \ln a
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+\begin{equation}
+\begin{aligned}
+\frac{d\left(a^{2 x^2}\right)}{d x} & =\frac{d\left(2 x^2\right)}{d x} \cdot (a^{2 x^2} \cdot \ln a) \\
+& =2 \cdot 2 \cdot x \cdot a^{2 x^2} \cdot \ln a \\
+& =4 x \cdot \ln a \cdot a^{2 x^2} \\
+& =4 a^{2 x^2} \cdot x \ln a
+\end{aligned}
+\end{equation}
+
+<hr style="border:1px solid red" >
+
++++
 
 <hr style="border:1px solid grey" >
 
@@ -109,7 +195,60 @@ $$
 
 <br>
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+Start with expanding $\sin(A \pm B)$ using the compound angle formulae. $B$ will be $\Delta x$, the very small changes of angle in radian.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+
+From first principle: $Q^2$.
+$$
+\begin{aligned}
+\frac{d(\sin x)}{d x} & =\lim _{\Delta x \rightarrow 0} \frac{\sin (x+\Delta x)-\sin (x)}{\Delta x} \\
+& =\lim _{\Delta x \rightarrow 0} \frac{\sin x \cdot \cos \Delta x+\cos x \cdot \sin \Delta x-\sin x}{\Delta x} \text { (expending $sin (x+\Delta x)$) } \\
+& =\lim _{\Delta x \rightarrow 0} \frac{\sin x(\cos \Delta x-1)+\cos x \cdot \sin \Delta x}{\Delta x} \text { (based on Combined Angle Identity) } \\
+& =\frac{\lim _{\Delta x \rightarrow 0}}{\Delta x}\left(\frac{\sin (\cos \Delta x-1)}{\Delta x}+\frac{\cos x \cdot \sin \Delta x)}{\Delta x}\right) \\
+\because & \Delta x \rightarrow 0, \frac{\cos \Delta x-1}{\Delta x}=0\\
+& \text { and } \Delta x \rightarrow 0, \frac{\sin \Delta x}{\Delta x}=1 \quad\\
+\therefore \frac{d \sin x}{d x} &= \lim _{\Delta x \rightarrow 0}\left(\frac{\sin (\cos \Delta x-1)}{\Delta x}+\frac{\cos x \cdot \sin \Delta x}{\Delta x}\right) \\
+& =\sin \cdot 0+\cos \cdot 1 \\
+& =\cos x
+\end{aligned}
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 (b) Identify where in the proof this assumption that $x$ is in radians is needed.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Based on small angle approximation, $x$ need to be in radian, because. $\Delta x \rightarrow 1, \space\frac{\sin \Delta x}{\Delta x}=1$
+It can only be true when $x$ is in radian, it is not true when $x$ is in angle.
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
 
 <br>
 
@@ -117,9 +256,47 @@ $$
 
 3.
 (a) Find an expression in terms of $x$ and $y$ for the gradient of the curve
+
+<br>
+
 $$
 x^{2}+k x y+4 y^{2}=48
 $$
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+Differentiation of Implicit function, together with chain rule and product rule. For example, $\frac{d(kxy)}{dx} = (ky\cdot\frac{dx}{dx} + kx\cdot \frac{d y}{d x}) = (ky + kx\cdot \frac{d y}{d x})$ 
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+
+$$
+\begin{aligned}
+\frac{d\left(x^2+k x y+4 y^2\right)}{d x} & =\frac{d(48)}{d x} \\
+& =0 \\
+& =2 x+ (ky + kx\cdot \frac{d y}{d x}) +4 \cdot 2 y \frac{d y}{d x} \\
+0 & =2 x+k y+(k x+8 y) \frac{d y}{d x} \\
+\text { rearrange: } \frac{d y}{d x} & =\frac{-(2 x+k y)}{k x+8 y}
+\end{aligned}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
 
 <br>
 
@@ -133,7 +310,119 @@ $$
 
 Find the values of $y$ for which the tangent to the curve is vertical.
 
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\begin{aligned}
+\because \text{tangent is vertical, denominator of derivative function need to be 0}\\
+\therefore kx+8 y & =0
+\end{aligned}
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+k=2 \rightarrow \frac{d y}{d x}=\frac{-(2 x+2 y)}{2 x+8 y}=\frac{-(x+y)}{x+4 y}\\
+$$
+
+<br>
+
+$$
+\begin{aligned}
+\because \text{tangent is vertical}\\
+\therefore x+4 y & =0 \\
+y & =-\frac{x}{4}
+\end{aligned}
+$$
+
+<br>
+
+$$
+\begin{aligned}
+\text{Combined with original curve, we can have following equation set:}\\
+\newline
+\left\{\begin{array}{l}
+x^2+2 x y+4 y^2=48 \space\space\space\text {(original curve when $k=2$.)}\\
+y=-\frac{x}{4}\\
+\end{array}\right.\\
+\end{aligned}
+$$
+
+<br>
+
+$$
+\begin{aligned}
+\text{solve above:}\\
+x^2+2 x \cdot\left(\frac{-x}{4}\right)+4\left(\frac{-x}{4}\right)^2&=48\\
+x^2-\frac{x^2}{2}+\frac{x^2}{4}&=48\\
+3 x^2&=48 \cdot 4\\
+x &= \pm 8\\
+y &= \pm 2
+\end{aligned}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 \((c)\) Explain what happens to the gradient when $k=4$.
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+Substitute $k=4$ into original function, and rearranged, then see what kind of function it it
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\begin{aligned}
+& x^2+4 x y+4 y^2=48 \\
+& (x+2 y)^2=48 \\
+& x+2 y= \pm \sqrt{4 x} \\
+& = \pm \sqrt{12} \\
+& = \pm 4 \sqrt{3} \\
+& y=\frac{-x \pm 4 \sqrt{3}}{2} \\
+& =-\frac{1}{2} x \pm 2 \sqrt{3}
+\end{aligned}
+$$
+
+<br>
+
+$$
+\text{when $k=4$, the original function has constant gradient $-\frac{1}{2}$}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
 
 <br>
 
@@ -145,6 +434,58 @@ Show that the curve $y=x-\ln x$ has one turning point only, and give the coordin
 
 <br>
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\begin{aligned}
+\frac{d(\ln x)}{dx}=\frac{1}{x}
+\end{aligned}
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\begin{aligned}
+\frac{d(x-\ln x)}{d x}=1-\frac{1}{x}\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\newline
+\text{To find the turning point:}\\
+1-\frac{1}{x}=0\\
+x=1 \\
+\text{Only one solution, so only one turning point}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+x&=0\\
+y&=0-\ln 0\\
+y&=-1
+\end{aligned}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 <hr style="border:1px solid grey" >
 
 5. **In this question you must show detailed reasoning**
@@ -153,8 +494,100 @@ A curve has $y=\mathrm{e}^{2 x} \cos x$
 
 (a) Show that the turning points of the curve occur at the points for which $\tan x=2$.
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+
+$$
+\begin{aligned}
+\frac{d\left(e^{2 x} \cdot \cos x\right)}{dx} & =\frac{d\left(e^{2 x}\right)}{d x} \cdot \cos x+e^{2 x} \cdot \frac{d \cos x}{d x} \\
+& =2\cdot e^{2 x} \cdot \cos x - e^{-2 x} \cdot \sin x\\
+&=e^{2x}(2\cos {x}-\sin{x})
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{to work out the turn points, set derivative to 0:}
+\newline
+e^{2x}(2\cos {x}-\sin{x})&=0\\
+\text{since $e^{2} \geq 0$}\\
+2\cos {x}-\sin{x}&=0\\
+2&=\frac{\sin x}{\cos x}\\
+2&=\tan x
+\end{aligned}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
+
 <br>
 
 (b) Find the equation of the normal to the curve at the point for which $x=0$.
 
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\begin{aligned}
+\text{The derivative of original function is:}\\
+y'&=e^{2x}(2\cos {x}-\sin{x})\\
+\text{When $x=0$:}\\
+y'&=e^0(2\cos 0 - \sin 0)\\
+&=2
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{2 is gradient at $x=0$, then the normal will be: $-\frac{1}{2}$}\\
+\text{the line equation for normal will be:}\\
+y=-\frac{1}{2}+C\\
+\text{To work out C, we substitute $x=0$ into original function:}\\
+y=e^{2x}\cos{x}\\
+y=\cos{0}=1\\
+\text{substitute $x=0,\space y=1$, into normal line equation:}\\
+1=C\\
+\text{the final equation is:}\\
+y=-\frac{1}{2}+1\\
+\end{aligned}
+$$
+
+<br>
+
+<hr style="border:1px solid red" >
+
++++
+
 </div>
+
+<p align="center">
+<img src="/images/rihnour.jpg" alt="drawing" width="500"/>
+</p>
