@@ -15,10 +15,11 @@
   - Verify converter exit code before continuing.
   - Use Test-Path instead of Remove-Item with -ErrorAction SilentlyContinue.
 #>
-
+Copy-Item ".\docs\Pure Year 2\Further differentiation\test.tex" ".\docs\Pure Year 2\Further differentiation\test.mmd" -Force
 mpx convert ".\docs\Pure Year 2\Further differentiation\test.mmd" ".\docs\Pure Year 2\Further differentiation\test.html"
 Remove-Item ".\docs\Pure Year 2\Further differentiation\test.md" -ErrorAction SilentlyContinue
 Move-Item ".\docs\Pure Year 2\Further differentiation\test.html" ".\docs\Pure Year 2\Further differentiation\test.md"
+Remove-Item ".\docs\Pure Year 2\Further differentiation\test.mmd" -ErrorAction SilentlyContinue
 
 # mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"   # Convert source .mmd -> .html
 # Remove-Item ".\docs\Draft\draft.md" -ErrorAction SilentlyContinue     # Remove existing markdown (ignore if missing)
