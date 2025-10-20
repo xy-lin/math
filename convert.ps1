@@ -16,11 +16,16 @@
   - Use Test-Path instead of Remove-Item with -ErrorAction SilentlyContinue.
 #>
 
-Copy-Item ".\docs\Pure Year 2\Parametric equations\test.tex" ".\docs\Pure Year 2\Parametric equations\test.mmd" -Force
-mpx convert ".\docs\Pure Year 2\Parametric equations\test.mmd" ".\docs\Pure Year 2\Parametric equations\test.html"
-Remove-Item ".\docs\Pure Year 2\Parametric equations\test.md" -ErrorAction SilentlyContinue
-Move-Item ".\docs\Pure Year 2\Parametric equations\test.html" ".\docs\Pure Year 2\Parametric equations\test.md"
-Remove-Item ".\docs\Pure Year 2\Parametric equations\test.mmd" -ErrorAction SilentlyContinue
+# Check for environment variables for path components
+echo $env:MATH_SUBFOLDER
+$TestPath = ".\docs\$env:MATH_SUBFOLDER"
+echo $TestPath
+
+Copy-Item "$TestPath\test.tex" "$TestPath\test.mmd" -Force
+mpx convert "$TestPath\test.mmd" "$TestPath\test.html"
+Remove-Item "$TestPath\test.md" -ErrorAction SilentlyContinue
+Move-Item "$TestPath\test.html" "$TestPath\test.md"
+Remove-Item "$TestPath\test.mmd" -ErrorAction SilentlyContinue
 
 Copy-Item ".\docs\Draft\draft.tex" ".\docs\Draft\draft.mmd" -Force
 mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"
