@@ -1,0 +1,27 @@
+Main idea (simple step change)
+
+Keep the given parametric motion for 0 ≤ t < t0.
+At time t0 (when the wind strengthens) add a constant horizontal acceleration a_w for t ≥ t0 to model the stronger wind’s net horizontal push (a_w > 0 if the wind pushes the ball in the +x direction, a_w < 0 if it acts opposite).
+Baseline (given) model
+$$
+x(t)=5t - t^{2},\qquad y(t)=10t - 5t^{2},\qquad 0\le t\le 2.
+$$
+From these the original constant accelerations are
+$$
+a_{x0}=\frac{d^2 x}{dt^2}=-2,\qquad a_y=\frac{d^2 y}{dt^2}=-10.
+$$
+
+Piecewise refined model (step increase at t0)
+For t < t0 nothing changes:
+$$
+x(t)=5t - t^{2},\qquad y(t)=10t - 5t^{2}.
+$$
+
+For t \ge t0 add the extra horizontal acceleration a_w (vertical motion unchanged in this simple model). Let
+$$
+v_x(t_0)=5-2t_0,\qquad x(t_0)=5t_0-t_0^2.
+$$
+Then for t \ge t0
+$$
+v_x(t)=v_x(t_0)+\bigl(a_{x0}+a_w\bigr),(t-t_0),
+$$

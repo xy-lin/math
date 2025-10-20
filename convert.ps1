@@ -15,14 +15,17 @@
   - Verify converter exit code before continuing.
   - Use Test-Path instead of Remove-Item with -ErrorAction SilentlyContinue.
 #>
-Copy-Item ".\docs\Pure Year 2\Further differentiation\test.tex" ".\docs\Pure Year 2\Further differentiation\test.mmd" -Force
-mpx convert ".\docs\Pure Year 2\Further differentiation\test.mmd" ".\docs\Pure Year 2\Further differentiation\test.html"
-Remove-Item ".\docs\Pure Year 2\Further differentiation\test.md" -ErrorAction SilentlyContinue
-Move-Item ".\docs\Pure Year 2\Further differentiation\test.html" ".\docs\Pure Year 2\Further differentiation\test.md"
-Remove-Item ".\docs\Pure Year 2\Further differentiation\test.mmd" -ErrorAction SilentlyContinue
 
-# mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"   # Convert source .mmd -> .html
-# Remove-Item ".\docs\Draft\draft.md" -ErrorAction SilentlyContinue     # Remove existing markdown (ignore if missing)
-# Move-Item ".\docs\Draft\Draft.html" ".\docs\Draft\draft.md"        # Rename HTML output to .md for consumption
+Copy-Item ".\docs\Pure Year 2\Parametric equations\test.tex" ".\docs\Pure Year 2\Parametric equations\test.mmd" -Force
+mpx convert ".\docs\Pure Year 2\Parametric equations\test.mmd" ".\docs\Pure Year 2\Parametric equations\test.html"
+Remove-Item ".\docs\Pure Year 2\Parametric equations\test.md" -ErrorAction SilentlyContinue
+Move-Item ".\docs\Pure Year 2\Parametric equations\test.html" ".\docs\Pure Year 2\Parametric equations\test.md"
+Remove-Item ".\docs\Pure Year 2\Parametric equations\test.mmd" -ErrorAction SilentlyContinue
+
+Copy-Item ".\docs\Draft\draft.tex" ".\docs\Draft\draft.mmd" -Force
+mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"
+Remove-Item ".\docs\Draft\draft.md" -ErrorAction SilentlyContinue
+Move-Item ".\docs\Draft\Draft.html" ".\docs\Draft\draft.md"
+Remove-Item ".\docs\Draft\draft.mmd" -ErrorAction SilentlyContinue
 
 

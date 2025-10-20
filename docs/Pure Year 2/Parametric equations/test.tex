@@ -1,0 +1,641 @@
+<p align="center">
+<img src="/images/meercat.jpg" alt="drawing" width="500"/>
+</p>
+
+<div style="font-size: 22px;">
+
+<br><br>
+1. **Find the turning points of the curve with parametric equations $x=3 t, y=12 t-t^{3}$**
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+Differentiate $x=3t$ with respect to t:
+
+$$
+\frac{dx}{dt} = \frac{d(3t)}{dt} = 3
+$$
+
+Differentiate $y=12t−t^3$ with respect to t:
+$$
+\frac{dy}{dt} = \frac{d}{dt}(12t - t^3) = 12 - 3t^2
+$$
+Now, we use the chain rule:
+$$
+\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{12 - 3t^2}{3}
+$$
+We can simplify this expression:
+$$
+\frac{dy}{dx} = 4 - t^2
+$$
+To find the turning points, we set the derivative equal to zero:
+$$
+4 - t^2 = 0
+$$
+$$
+t^2 = 4
+$$
+Taking the square root of both sides gives us:
+$$
+t = \pm 2
+$$
+So, the turning points occur at $t=2$ and $t=−2$.
+
+Now we find the (x,y) coordinates for each value of t:
+When $t=2$
+For $x=3\times 2=6$
+For $y=12 \times (2)−(2)^3 =24−8=16$
+So, the first turning point is $(6,16)$
+When $t=−2$
+For $x=3\times(−2)=−6$
+For $y=12\times(−2)−(−2)^3=−24−(−8)=−24+8=−16$
+So, the second turning point is $(−6,−16)$.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+2. **A curve is defined by the parametric equations $x=2 t^{2}, y=4 t$.**
+
+(a) By eliminating the parameter, find the cartesian equation of the curve.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+The goal of eliminating the parameter is to get a single equation involving only x and y, without t. It's usually easiest to isolate t from the simpler equation. In this case, equation (2) is perfect for that:
+
+A curve is defined by the parametric equations:
+\begin{align*} x &= 2t^2 \quad &(1) \\ y &= 4t \quad &(2)\end{align*}
+
+From y=4t, we can solve for t:
+$$
+t = \frac{y}{4}
+$$
+
+Now, substitute this expression for $t$ into equation (1):
+$$
+x = 2\left(\frac{y}{4}\right)^2
+$$
+
+Let's simplify the expression to get our final Cartesian equation:
+$$
+x = 2\left(\frac{y^2}{16}\right)
+$$
+$$
+x = \frac{2y^2}{16}
+$$
+$$
+x = \frac{y^2}{8}
+$$
+We can also rearrange this to:
+$$
+y^2 = 8x
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+(b) Find, in the form $a x+b y+c=0$, the equation of the tangent to the curve at the point A with parameter $t=2$.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+A curve is defined by the parametric equations:
+\begin{align*} x &= 2t^2 \\ y &= 4t \end{align*}
+We want to find the equation of the tangent to this curve at point A, where $t=2$, in the form $ax+by+c=0$.
+
+Step 1: Find the coordinates of point A
+First, we determine the $x$ and $y$ coordinates of point A when $t=2$.
+Substitute $t=2$ into the parametric equations:
+\begin{align*} x &= 2(2^2) = 2(4) = 8 \\ y &= 4(2) = 8 \end{align*}
+So, the point A is $(8, 8)$.
+
+Step 2: Find the derivative $\frac{dy}{dx}$
+To find the slope of the tangent line, we calculate $\frac{dy}{dx}$. For parametric equations, we use the chain rule:
+$$ \frac{dy}{dx} = \frac{dy/dt}{dx/dt} $$
+First, let's find $\frac{dx}{dt}$ and $\frac{dy}{dt}$:
+\begin{align*} \frac{dx}{dt} &= \frac{d}{dt}(2t^2) = 4t \\ \frac{dy}{dt} &= \frac{d}{dt}(4t) = 4 \end{align*}
+Now, substitute these into the formula for $\frac{dy}{dx}$:
+$$ \frac{dy}{dx} = \frac{4}{4t} = \frac{1}{t} $$
+
+Step 3: Calculate the slope of the tangent at point A
+The slope of the tangent line at point A is the value of $\frac{dy}{dx}$ when $t=2$:
+$$ m = \left.\frac{dy}{dx}\right|_{t=2} = \frac{1}{2} $$
+
+Step 4: Use the point-slope form of a line
+We have the point A $(x_1, y_1) = (8, 8)$ and the slope $m = \frac{1}{2}$. We use the point-slope form of a linear equation:
+$$ y - y_1 = m(x - x_1) $$
+Substitute the values:
+$$ y - 8 = \frac{1}{2}(x - 8) $$
+
+Step 5: Convert the equation to the form $ax + by + c = 0$
+To remove the fraction and rearrange the terms, multiply both sides by 2:
+\begin{align*} 2(y - 8) &= 1(x - 8) \\ 2y - 16 &= x - 8 \end{align*}
+Now, move all terms to one side to match the $ax + by + c = 0$ form:
+\begin{align*} x - 2y + 8 &= 0 \end{align*}
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+3. **A line segment is defined by the parametric equations $x=\cos 2 t, y=\sin ^{2} t$**
+
+<br>
+
+(a) Find $\frac{\mathrm{d} y}{\mathrm{~d} x}$.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Differentiate with respect to $t$
+\begin{align*}
+\frac{dx}{dt} &= \frac{d}{dt}(\cos 2t) = -2\sin 2t, \\
+\frac{dy}{dt} &= \frac{d}{dt}(\sin^2 t) = 2\sin t\cos t = \sin 2t.
+\end{align*}
+
+Form the quotient
+$$
+\frac{dy}{dx} = \frac{\displaystyle\frac{dy}{dt}}{\displaystyle\frac{dx}{dt}}
+= \frac{\sin 2t}{-2\sin 2t} = -\frac{1}{2}.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+(b) Find the cartesian equation of the line segment, stating its domain.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+_Method 1: Eliminate the parameter_
+Eliminate the parameter using the identity $\sin^2 t = \dfrac{1-\cos 2t}{2}$, since $y=\sin^2 t$, so:
+$$
+y = \frac{1-\cos 2t}{2}.
+$$
+Substitute $x=\cos 2t$ to obtain the Cartesian equation:
+$$
+y = \frac{1-x}{2}.
+$$
+Rearranging gives the line equation in standard form:
+$$
+\begin{align*}
+x + 2y - 1 = 0\\
+y = -\frac{1}{2}x  + \frac{1}{2}
+\end{align*}
+$$
+
+<br>
+
+
+_Method 2: Use the derivative and point-slope form_
+From part (a), we have $\frac{dy}{dx} = -\frac{1}{2}$, which is the slope of the line segment. To find the equation of the line, we need a point on the line. We can use $t=0$ to find a point:
+When $t=0$:
+\begin{align*}
+x &= \cos(0) = 1, \\
+y &= \sin^2(0) = 0.
+\end{align*}
+
+So, the point is $(1, 0)$. Using the point-slope form of a line:
+$$
+y - y_1 = m(x - x_1)
+$$
+Substituting the point $(1, 0)$ and slope $m = -\frac{1}{2}$:
+
+$$
+\begin{align*}
+y - 0 = -\frac{1}{2}(x - 1)\\
+y = -\frac{1}{2}x  + \frac{1}{2}
+\end{align*}
+$$
+
+<br>
+
+_Domain_
+Regarding the domain, since $x=\cos 2t$ satisfies $-1\le x\le 1$, so the domain is $-1\le x\le 1$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+4. **A circle is defined by the parametric equations $x=1+2 \cos \theta, y=3+2 \sin \theta$.**
+
+<br>
+
+(a) Sketch the circle.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+a circle centred at (1,3) with radius 2
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+(b) Find $\frac{\mathrm{d} y}{\mathrm{~d} x}$ at the point with parameter $\theta$.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Differentiate with respect to \theta:
+$$
+\frac{dx}{d\theta} = -2\sin\theta,\qquad \frac{dy}{d\theta} = 2\cos\theta.
+$$
+
+Hence
+$$
+\frac{dy}{dx}=\frac{\dfrac{dy}{d\theta}}{\dfrac{dx}{d\theta}}=\frac{2\cos\theta}{-2\sin\theta}=-\cot\theta,
+$$
+valid for $sinθ \neq 0$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+\((c)\) Show that the equation of the tangent at the point with parameter $\theta$ can be written as $(y-3) \sin \theta+(x-1) \cos \theta=2$
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Parametric equations
+\begin{align*}
+x(\theta) &= 1 + 2\cos\theta,\\
+y(\theta) &= 3 + 2\sin\theta.
+\end{align*}
+
+Point on the curve
+The point is $P=(x_0,y_0)=(1+2\cos\theta,\;3+2\sin\theta)$.
+
+Derivatives
+\begin{align*}
+\frac{dx}{d\theta} &= -2\sin\theta,\\
+\frac{dy}{d\theta} &= 2\cos\theta.
+\end{align*}
+
+Slope dy/dx
+$$
+\frac{dy}{dx} = \frac{\dfrac{dy}{d\theta}}{\dfrac{dx}{d\theta}} = -\cot\theta.
+$$
+
+
+Point-slope form
+$$
+y - y_0 = -\cot\theta\,(x-x_0).
+$$
+
+Multiply both sides by \sin\theta
+$$
+(y-y_0)\sin\theta = -\cos\theta\,(x-x_0).
+$$
+
+Substitute ($x_0,y_0)=(1+2\cos\theta,\;3+2\sin\theta)$
+
+$$
+(y-3-2\sin\theta)\sin\theta = -\cos\theta\,(x-1-2\cos\theta).
+$$
+
+
+Expand and rearrange
+$$
+(y-3)\sin\theta - 2\sin^2\theta + (x-1)\cos\theta - 2\cos^2\theta = 0.
+$$
+
+$$
+(y-3)\sin\theta + (x-1)\cos\theta - 2(\sin^2\theta+\cos^2\theta) = 0
+$$
+
+Use identity $sin^2x+cos^2x=1$
+$$
+(y-3)\sin\theta + (x-1)\cos\theta = 2.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+(d) Find the coordinates of the point where $\theta=\frac{\pi}{3}$.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Plug in $\theta=\frac{\pi}{3}$ Using
+$$
+\cos\frac{\pi}{3}=\tfrac{1}{2},\qquad \sin\frac{\pi}{3}=\tfrac{\sqrt{3}}{2},
+$$
+we get
+$$
+x=1+2\cos\frac{\pi}{3}=1+2\cdot\tfrac{1}{2}=2,
+\qquad
+y=3+2\sin\frac{\pi}{3}=3+2\cdot\tfrac{\sqrt{3}}{2}=3+\sqrt{3}.
+$$
+So the point is $(2,3+\sqrt{3})$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+(e) Find, in the form $a x+b y+c=0$, the equation of the normal at the point where $\theta=\frac{\pi}{3}$.
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+The parametric equations are
+
+$$
+x(\theta)=1+2\cos\theta,\qquad y(\theta)=3+2\sin\theta.
+$$
+
+
+At $\theta=\dfrac{\pi}{3}$ we have
+
+$$
+\cos\frac{\pi}{3}=\tfrac{1}{2},\qquad \sin\frac{\pi}{3}=\tfrac{\sqrt{3}}{2},
+$$
+
+hence the point is
+
+$$
+(x_0,y_0)=\bigl(1+2\cdot\tfrac{1}{2},\;3+2\cdot\tfrac{\sqrt{3}}{2}\bigr)=(2,\;3+\sqrt{3}).
+$$
+
+
+The slope of the tangent is
+
+$$
+\frac{dy}{dx}=-\cot\theta \quad\Rightarrow\quad
+\left.\frac{dy}{dx}\right|_{\theta=\pi/3} = -\cot\frac{\pi}{3} = -\frac{1}{\sqrt{3}}.
+$$
+
+Thus the slope of the normal is the negative reciprocal:
+
+$$
+m_{\text{normal}}=\sqrt{3}.
+$$
+
+
+The normal line through $(2,\,3+\sqrt{3})$ is
+
+$$
+y-(3+\sqrt{3})=\sqrt{3}\,(x-2).
+$$
+
+Rearrange to the form $ax+by+c=0$:
+
+$$
+\sqrt{3}\,x - y + 3 - \sqrt{3} = 0.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+5. **A ball is thrown from a fixed point O on a windy day. At time t seconds after it is thrown, the vertical displacement $y$ metres and the horizontal displacement $x$ metres of the ball from $O$ can be modelled by the parametric equations:**
+
+$$
+x=5 t-t^{2}, \quad y=10 t-5 t^{2}, \quad 0 \leq t \leq 2
+$$
+
+<br>
+
+(a) Use this model to find the position of the ball after 0.8 s
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+The parametric model is
+
+$$
+x(t)=5t-t^{2},\qquad y(t)=10t-5t^{2},\qquad 0\le t\le 2.
+$$
+
+Evaluate at $t=0.8$s:
+
+$$
+\begin{align*}
+x(0.8) &= 5(0.8) - (0.8)^2 = 4 - 0.64 = 3.36\ \text{m}\\
+y(0.8) &= 10(0.8) - 5(0.8)^2 = 8 - 5(0.64) = 8 - 3.2 = 4.8\ \text{m}
+\end{align*}
+$$
+
+Therefore the position of the ball after $0.8$ s is
+$$
+\bigl(x,y\bigr) = \bigl(3.36,\;4.8\bigr)\ \text{metres}.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+(b) Use this model to find the height of the ball when it has travelled a horizontal distance of 2.25 m
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Solve for t from the horizontal equation, then find y.
+$$
+x=5t-t^{2}=2.25.
+$$
+Rearrange:
+$$
+t^{2}-5t+2.25=0.
+$$
+Compute the discriminant:
+$$
+\Delta=(-5)^{2}-4(1)(2.25)=25-9=16,
+$$
+so
+$$
+t=\frac{5\pm\sqrt{16}}{2}=\frac{5\pm4}{2}.
+$$
+This gives (t=4.5) and (t=0.5). Only (t=0.5) lies in the allowed interval $(0\le t\le2)$.
+Now compute the height:
+$$
+y(0.5)=10(0.5)-5(0.5)^{2}=5-5(0.25)=5-1.25=3.75\ \text{m}.
+$$
+The height is 3.75 m when the ball has travelled 2.25 m horizontally.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+
+\((c)\) Use this model to find the horizontal displacement of the ball at its maximum height.
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Find when the height is maximum, then evaluate the horizontal position there.
+
+The vertical displacement is
+$$
+y(t)=10t-5t^{2}.
+$$
+Differentiate to find the maximum:
+$$
+\frac{dy}{dt}=10-10t.
+$$
+Set this to zero to get the time of maximum height:
+$$
+10-10t=0 \quad\Rightarrow\quad t=1\ \text{s}.
+$$
+Now evaluate the horizontal displacement at this time:
+$$
+x(1)=5(1)-1^{2}=4\ \text{m}.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+(d) Explain the significance of the domain of the parametric equations, $0 \leq t \leq 2$
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+t=0 represents the time when the ball is thrown from point O, and t=2 represents the time when the ball lands back on the ground. Therefore, the domain $0 \leq t \leq 2$ indicates the entire duration of the ball's flight from launch to landing.
+
+<p align="center">
+<img src="/images/ballFly.png" alt="drawing" width="1000"/>
+</p>
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+(e) Later in the day, the wind strength increases. It is still blowing from the same direction and the ball is still thrown with the same velocity. Explain how you could refine the model to reflect the change in conditions.
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Wind strength increase can be modelled by acceleration in the horizontal direction. We can calculate the the starting velocity based on acceleration, and velocity can be used to find the new position in the horizontal direction. 
+No change in vertical motion.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+</div>
+<p align="center">
+<img src="/images/pumpkin.jpg" alt="drawing" width="500"/>
+</p>
+
