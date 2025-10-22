@@ -973,6 +973,9 @@ Regarding the domain, since <span class="math-inline ">
 <details>
 <summary><span class="details-marker">&nbsp;</span><span style="color:green">Solutions</span></summary><hr style="border:1px solid red" >
 <div>a circle centred at (1,3) with radius 2</div>
+<p align="center">
+<img src="/images/circle_1.png" alt="drawing" width="800"/>
+</p>
 <hr style="border:1px solid red" >
 </details>
 <br>
