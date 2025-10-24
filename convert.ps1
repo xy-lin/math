@@ -16,21 +16,32 @@
   - Use Test-Path instead of Remove-Item with -ErrorAction SilentlyContinue.
 #>
 
-# Check for environment variables for path components
-echo $env:MATH_SUBFOLDER
-$TestPath = ".\docs\$env:MATH_SUBFOLDER"
-echo $TestPath
+# Read configuration from file
+$ConfigFile = "c:\temp\math.cfg"
+if (Test-Path $ConfigFile) {
+    $FirstLine = (Get-Content $ConfigFile -TotalCount 1).Trim()
+} else {
+    # Default if config file doesn't exist
+    $FirstLine = ".\docs\Pure Year 2\Parametric equations"
+    Write-Warning "Config file $ConfigFile not found. Using default test path"
+}
 
-Copy-Item "$TestPath\test.tex" "$TestPath\test.mmd" -Force
-mpx convert "$TestPath\test.mmd" "$TestPath\test.html"
-Remove-Item "$TestPath\test.md" -ErrorAction SilentlyContinue
-Move-Item "$TestPath\test.html" "$TestPath\test.md"
-Remove-Item "$TestPath\test.mmd" -ErrorAction SilentlyContinue
-
-Copy-Item ".\docs\Draft\draft.tex" ".\docs\Draft\draft.mmd" -Force
-mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"
-Remove-Item ".\docs\Draft\draft.md" -ErrorAction SilentlyContinue
-Move-Item ".\docs\Draft\Draft.html" ".\docs\Draft\draft.md"
-Remove-Item ".\docs\Draft\draft.mmd" -ErrorAction SilentlyContinue
+if ($FirstLine -eq "Draft") {
+    Write-Host "Processing Draft files..."
+    Copy-Item ".\docs\Draft\draft.tex" ".\docs\Draft\draft.mmd" -Force
+    mpx convert ".\docs\Draft\draft.mmd" ".\docs\Draft\draft.html"
+    Remove-Item ".\docs\Draft\draft.md" -ErrorAction SilentlyContinue
+    Move-Item ".\docs\Draft\Draft.html" ".\docs\Draft\draft.md"
+    Remove-Item ".\docs\Draft\draft.mmd" -ErrorAction SilentlyContinue
+} else {
+    # Process test files using the path from first line
+    $TestPath = $FirstLine
+    Write-Host "Processing test files at: $TestPath"
+    Copy-Item "$TestPath\test.tex" "$TestPath\test.mmd" -Force
+    mpx convert "$TestPath\test.mmd" "$TestPath\test.html"
+    Remove-Item "$TestPath\test.md" -ErrorAction SilentlyContinue
+    Move-Item "$TestPath\test.html" "$TestPath\test.md"
+    Remove-Item "$TestPath\test.mmd" -ErrorAction SilentlyContinue
+}
 
 
