@@ -21,3 +21,12 @@ Add following config for "Run on Save" plugin to run the script to convert mmd t
     ]
   }
 ```
+
+To customised the theme:
+Location: C:\Users\m3n9bk\AppData\Local\Programs\Python\Python313\Lib\site-packages\mkdocs\themes\readthedocs
+
+Uee Chrome dev tool to pick the elements need to change, then search inside `\css\theme.css`
+
+For example, to change the frame size of main contents, the class is called `wy-nav-content`. Change its `max-width` to 1000px
+
+Another example, to change the font size of of the left menu, the class is called `.wy-menu-vertical a`, change the font-size from 90% to 100%
