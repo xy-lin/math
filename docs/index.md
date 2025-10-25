@@ -28,7 +28,14 @@ date: "October 2025"
 .grid-item p {
     margin: 0;
     padding: 15px;
-    text-align: justify;
+}
+
+.grid-item:nth-child(2) p {
+    text-align: left;
+}
+
+.grid-item:nth-child(3) p {
+    text-align: right;
 }
 </style>
 
