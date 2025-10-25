@@ -748,7 +748,7 @@ foreignObject[data-mjx-xml] {
     <div id="container-ruller" />
     <div id="preview-content">
       <p align="center">
-<img src="/images/otter.jpg" alt="drawing" width="500"/>
+<img src="/images/good.png" alt="drawing" width="500"/>
 </p>
 <div style="font-size: 22px;">
 <div><br><br></div>
@@ -1040,7 +1040,7 @@ It can only be true when <span class="math-inline ">
 </details>
 </div>
 <p align="center">
-<img src="/images/rihnour.jpg" alt="drawing" width="500"/>
+<img src="/images/goodbad.webp" alt="drawing" width="500"/>
 </p>
 
     </div>

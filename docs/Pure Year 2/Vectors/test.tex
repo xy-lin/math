@@ -1,0 +1,235 @@
+<p align="center">
+<img src="/images/leonTeaching.png" alt="drawing" width="500"/>
+</p>
+
+<div style="font-size: 22px;">
+
+<br><br>
+
+1. The points $\mathrm{A}, \mathrm{B}, \mathrm{C}$ and D have coordinates $(2,1,3),(4,1,5),(2,5, p)$ and $(q, r, 1)$ respectively. If $\overrightarrow{\mathrm{AB}}=\overrightarrow{\mathrm{CD}}$ what are the values of $p, q$ and $r$ ?
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+A=(2,1,3),\qquad B=(4,1,5),\qquad C=(2,5,p),\qquad D=(q,r,1).
+$$
+
+Compute the vectors
+
+$$
+\overrightarrow{AB}=B-A=(4-2,\;1-1,\;5-3)=(2,0,2),
+$$
+
+and
+
+$$
+\overrightarrow{CD}=D-C=(q-2,\;r-5,\;1-p).
+$$
+
+The condition $\overrightarrow{AB}=\overrightarrow{CD}$ gives the following equations:
+
+$$
+q-2=2,\qquad r-5=0,\qquad 1-p=2.
+$$
+
+Solving these,
+
+$$
+q=4,\qquad r=5,\qquad p=-1.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+2. Points A and B have coordinates $(2,1,1)$ and $(20,-5,13)$ respectively. If point $C$ is such that $2 \overrightarrow{A C}=\overrightarrow{C B}$, what are the coordinates of $C$ ?
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Points $A=(2,1,1)$ and $B=(20,-5,13)$. Let $C=(x,y,z)$. The vector condition is
+
+$$
+2\overrightarrow{AC}=\overrightarrow{CB}.
+$$
+
+Since $\overrightarrow{AC}=C-A$ and $\overrightarrow{CB}=B-C$, we have
+
+$$
+2(C-A)=B-C.
+$$
+
+Rearrange to solve for $C$:
+
+$$
+2C-2A=B-C \quad\Longrightarrow\quad 3C=B+2A \quad\Longrightarrow\quad C=\frac{B+2A}{3}.
+$$
+
+With $A=(2,1,1)$ and $B=(20,-5,13)$,
+
+$$
+2A=(4,2,2),\qquad B+2A=(24,-3,15),
+$$
+
+hence
+
+$$
+C=\frac{1}{3}(24,-3,15)=(8,-1,5).
+$$
+
+
+A quick check: $\overrightarrow{AC}=(6,-2,4)$, so $2\overrightarrow{AC}=(12,-4,8)=\overrightarrow{CB}$, as required.
+
+Therefore,
+
+$$
+C=(8,-1,5)
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+3. The point P has coordinates ( $-2,4,0$ ).
+The point Q is such that $\overrightarrow{\mathrm{PQ}}=\left(\begin{array}{c}3 \\ -2 \\ 1\end{array}\right)$.
+The point R has coordinates $(-1,1, r)$.
+For which value of $r$ is PQR an equilateral triangle?
+
+<br>
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+$$
+Q=P+\overrightarrow{PQ}=( -2+3,\;4-2,\;0+1)=(1,2,1)
+$$
+
+<p align="center">
+<img src="/images/vector.png" alt="drawing" width="500"/>
+</p>
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+The given points are
+
+$$
+P=(-2,4,0),\qquad \overrightarrow{PQ}=\begin{pmatrix}3\\-2\\1\end{pmatrix},
+\qquad R=(-1,1,r).
+$$
+
+Hence
+
+$$
+Q=P+\overrightarrow{PQ}=( -2+3,\;4-2,\;0+1)=(1,2,1).
+$$
+
+
+Compute the squared length of $\overrightarrow{PQ}$:
+
+$$
+\lVert\overrightarrow{PQ}\rVert^2=3^2+(-2)^2+1^2=9+4+1=14.
+$$
+
+Thus every side of the equilateral triangle must have squared length $14$.
+
+Compute squared lengths to $R$:
+
+$$
+\overrightarrow{PR}=R-P=(1,-3,r),\qquad
+\lVert\overrightarrow{PR}\rVert^2=1^2+(-3)^2+r^2=r^2+10,
+$$
+
+
+$$
+\overrightarrow{QR}=R-Q=(-2,-1,r-1),\qquad
+\lVert\overrightarrow{QR}\rVert^2=(-2)^2+(-1)^2+(r-1)^2=5+(r-1)^2.
+$$
+
+For $PQR$ to be equilateral we require
+
+$$
+\lVert\overrightarrow{PR}\rVert^2=\lVert\overrightarrow{PQ}\rVert^2
+\quad\text{and}\quad
+\lVert\overrightarrow{QR}\rVert^2=\lVert\overrightarrow{PQ}\rVert^2.
+$$
+
+From the first equation:
+
+$$
+r^2+10=14 \quad\Longrightarrow\quad r^2=4 \quad\Longrightarrow\quad r=\pm 2.
+$$
+
+From the second equation:
+
+$$
+5+(r-1)^2=14 \quad\Longrightarrow\quad (r-1)^2=9 \quad\Longrightarrow\quad r=4\ \text{or}\ r=-2.
+$$
+
+The only value common to both sets is $r=-2$.
+
+Check: for $r=-2$,
+
+$$
+\lVert\overrightarrow{PR}\rVert^2 = (-2)^2+10=14,\qquad
+\lVert\overrightarrow{QR}\rVert^2 = 5+(-3)^2=14,
+$$
+
+so all three sides have squared length $14$.
+
+Therefore,
+
+$$
+r=-2
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
+4. Point $A$ has coordinates ( $2,3,6$ ). Point B has coordinates ( $8,6,8$ ). Find the point C so that $\overrightarrow{\mathrm{AB}}$ and $\overrightarrow{\mathrm{AC}}$ are in the same direction and $|\overrightarrow{\mathrm{AC}}|=77$.
+5. Forces $\mathbf{F}_{1}=\lambda(3 \mathbf{i}-2 \mathbf{j}+\mathbf{k}) \mathrm{N}$ and $\mathbf{F}_{2}=\mu(\mathbf{i}+\mathbf{j}+3 \mathbf{k}) \mathrm{N}$, where $\lambda$ and $\mu$ are scalars, act on a box. Prove that it is not possible for their resultant force to act in the direction of $\mathbf{k}$.
+6. The points $\mathrm{P}, \mathrm{Q}$ and R have position vectors $\left(\begin{array}{c}3 \\ -1 \\ 4\end{array}\right),\left(\begin{array}{c}2 \\ -3 \\ 0\end{array}\right)$ and $\left(\begin{array}{l}7 \\ 1 \\ 3\end{array}\right)$.
+(a) Show that the triangle PQR is isosceles.
+(b) M is the midpoint of QR . Find the position vector of M .
+(c) Calculate the area of the triangle PQR .
+7. The points $\mathrm{A}, \mathrm{B}, \mathrm{C}$ and D have position vectors $\left(\begin{array}{c}2 \\ -1 \\ 4\end{array}\right),\left(\begin{array}{l}-3 \\ -1 \\ 14\end{array}\right),\left(\begin{array}{c}-11 \\ 4 \\ 20\end{array}\right)$ and $\left(\begin{array}{c}-6 \\ 4 \\ 10\end{array}\right)$.
+(a) Write down the vector $\overrightarrow{\mathrm{AB}}$.
+(b) Calculate the length BC
+(c) Prove that ABCD is a rhombus.
+
+<br>
+
+</div>
+<p align="center">
+<img src="/images/leonMoving.png" alt="drawing" width="500"/>
+</p>

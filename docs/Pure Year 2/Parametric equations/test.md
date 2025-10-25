@@ -748,7 +748,7 @@ foreignObject[data-mjx-xml] {
     <div id="container-ruller" />
     <div id="preview-content">
       <p align="center">
-<img src="/images/meercat.jpg" alt="drawing" width="500"/>
+<img src="/images/revenant2.jpg" alt="drawing" width="500"/>
 </p>
 <div style="font-size: 22px;">
 <div><br><br></div>
@@ -1204,7 +1204,7 @@ No change in vertical motion.</div>
 <br>
 </div>
 <p align="center">
-<img src="/images/pumpkin.jpg" alt="drawing" width="500"/>
+<img src="/images/revenant.jpg" alt="drawing" width="500"/>
 </p>
 
     </div>

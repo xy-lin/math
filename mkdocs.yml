@@ -12,7 +12,7 @@ nav:
         - Further differentiation: './Pure Year 2/Further differentiation/test.md'
         - Integration: './Pure Year 2/Integration/test.md'
         - Parametric equations: './Pure Year 2/Parametric equations/test.md'
-        - Vectors: './Pure Year 2/vectors/test.md'
+        - Vectors: './Pure Year 2/Vectors/test.md'
         - Differentiation equations: './Pure Year 2/Differentiation equations/test.md'
         - Numerical methods: './Pure Year 2/Numerical methods/test.md'
       - Mechanics Year 2:
@@ -25,10 +25,10 @@ nav:
         - Probability: './Statistics Year 2/Probability/test.md'
         - Statistical distributions: './Statistics Year 2/Statistical distributions/test.md'
         - Statistical hypothesis testing: './Statistics Year 2/Statistical hypothesis testing/test.md'
-    - Homeworks:
-      - Pure: './Homeworks/pure.md'
-      - Mechanics: './Homeworks/mechanics.md'
-      - Statistics: './Homeworks/statistics.md'
+    # - Homeworks:
+    #   - Pure: './Homeworks/pure.md'
+    #   - Mechanics: './Homeworks/mechanics.md'
+    #   - Statistics: './Homeworks/statistics.md'
     - Past Papers:
       - 2024: './Past Papers/test.md'
     - Draft: 
