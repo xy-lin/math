@@ -2,6 +2,28 @@ site_name: Our Maths Solutions
 nav:
     - Home: index.md
     - Integral Topic Accessment:
+      - Pure Year 1:
+        - Surds and Indices: './Pure Year 1/Surds and Indices/test.md'
+        - Quadratic Functions: './Pure Year 1/Quadratic Functions/test.md'
+        - Equations and Inequalities: './Pure Year 1/Equations and Inequalities/test.md'
+        - Coordinate Geometry: './Pure Year 1/Coordinate Geometry/test.md'
+        - Trigonometry: './Pure Year 1/Trigonometry/test.md'
+        - Polynomials: './Pure Year 1/Polynomials/test.md'
+        - Graphs and Transformations: './Pure Year 1/Graphs and Transformations/test.md'
+        - Binomial Expansion: './Pure Year 1/Binomial Expansion/test.md'
+        - Differentiation: './Pure Year 1/Differentiation/test.md'
+        - Integration: './Pure Year 1/Integration/test.md'
+        - Vectors: './Pure Year 1/Vectors/test.md'
+        - Exponentials and Logarithms: './Pure Year 1/Exponentials and Logarithms/test.md'
+      - Mechanics Year 1:
+        - Kinematics: './Mechanics Year 1/Kinematics/test.md'
+        - Forces and Newton's Laws: './Mechanics Year 1/Forces and Newtons Laws/test.md'
+        - Variable Acceleration: './Mechanics Year 1/Variable Acceleration/test.md'
+      - Statistics Year 1:
+        - Collecting and Interpretation Data: './Statistics Year 1/Collecting and Interpreting Data/test.md'
+        - Probability: './Statistics Year 1/Probability/test.md'
+        - Binomial Distributions: './Statistics Year 1/Binomial Distributions/test.md'
+        - Statistical Hypothesis Testing: './Statistics Year 1/Statistical Hypothesis Testing/test.md'
       - Pure Year 2:
         - Proof: './Pure Year 2/Proof/test.md'
         - Trigonometry: './Pure Year 2/Trigonometry/test.md'
