@@ -48,18 +48,6 @@ $$
 
 2. Points A and B have coordinates $(2,1,1)$ and $(20,-5,13)$ respectively. If point $C$ is such that $2 \overrightarrow{A C}=\overrightarrow{C B}$, what are the coordinates of $C$ ?
 
-<br>
-
-+++ <span style="color:blue">Hint</span>
-
-<hr style="border:1px solid red" >
-
-<hr style="border:1px solid red" >
-
-+++
-
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
 <hr style="border:1px solid red" >
@@ -215,15 +203,338 @@ $$
 <br>
 
 4. Point $A$ has coordinates ( $2,3,6$ ). Point B has coordinates ( $8,6,8$ ). Find the point C so that $\overrightarrow{\mathrm{AB}}$ and $\overrightarrow{\mathrm{AC}}$ are in the same direction and $|\overrightarrow{\mathrm{AC}}|=77$.
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+Compute the direction vector:
+
+$$
+\overrightarrow{AB}=B-A=(8-2,\;6-3,\;8-6)=(6,3,2).
+$$
+
+Let $\overrightarrow{AC}=t\,\overrightarrow{AB}$ with $t>0$. Then
+
+$$
+\lvert\overrightarrow{AC}\rvert=|t|\,\lvert\overrightarrow{AB}\rvert=77.
+$$
+
+Compute the length of $\overrightarrow{AB}$:
+
+$$
+\lvert\overrightarrow{AB}\rvert=\sqrt{6^2+3^2+2^2}=\sqrt{36+9+4}=\sqrt{49}=7.
+$$
+
+
+Hence
+
+$$
+t=\frac{77}{7}=11.
+$$
+
+
+So
+
+$$
+\overrightarrow{AC}=11(6,3,2)=(66,33,22),
+$$
+
+and therefore
+
+$$
+C=A+\overrightarrow{AC}=(2,3,6)+(66,33,22)=(68,36,28).
+$$
+
+
+Quick check:
+
+$$
+\lvert\overrightarrow{AC}\rvert=\sqrt{66^2+33^2+22^2}=\sqrt{4356+1089+484}=\sqrt{5929}=77.
+$$
+
+
+Therefore,
+
+$$
+C=(68,36,28)
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 5. Forces $\mathbf{F}_{1}=\lambda(3 \mathbf{i}-2 \mathbf{j}+\mathbf{k}) \mathrm{N}$ and $\mathbf{F}_{2}=\mu(\mathbf{i}+\mathbf{j}+3 \mathbf{k}) \mathrm{N}$, where $\lambda$ and $\mu$ are scalars, act on a box. Prove that it is not possible for their resultant force to act in the direction of $\mathbf{k}$.
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Let $\mathbf{F}_1=\lambda(3\mathbf{i}-2\mathbf{j}+\mathbf{k})$ and $\mathbf{F}_2=\mu(\mathbf{i}+\mathbf{j}+3\mathbf{k})$, where $\lambda,\mu$ are scalars. Their resultant is
+
+$$
+\mathbf{R}=\mathbf{F}_1+\mathbf{F}_2
+=\bigl(3\lambda+\mu\bigr)\mathbf{i}+\bigl(-2\lambda+\mu\bigr)\mathbf{j}+\bigl(\lambda+3\mu\bigr)\mathbf{k}.
+$$
+
+
+For $\mathbf{R}$ to act in the direction of $\mathbf{k}$ (i.e., to be parallel to $\mathbf{k}$ and nonzero) its $\mathbf{i}$- and $\mathbf{j}$-components must vanish:
+
+$$
+3\lambda+\mu=0,\qquad -2\lambda+\mu=0.
+$$
+
+Subtracting the second equation from the first gives
+
+$$
+(3\lambda+\mu)-(-2\lambda+\mu)=5\lambda=0,
+$$
+
+so $\lambda=0$. Substituting back yields $\mu=0$. Hence $\mathbf{R}=\mathbf{0}$.
+
+This means the resultant force is zero vector, and contradicts the requirement that it acts in the direction of $\mathbf{k}$ which requires a nonzero vector.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 6. The points $\mathrm{P}, \mathrm{Q}$ and R have position vectors $\left(\begin{array}{c}3 \\ -1 \\ 4\end{array}\right),\left(\begin{array}{c}2 \\ -3 \\ 0\end{array}\right)$ and $\left(\begin{array}{l}7 \\ 1 \\ 3\end{array}\right)$.
 (a) Show that the triangle PQR is isosceles.
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+The position vectors of $P,Q,R$ are
+
+$$
+\mathbf{p}=\begin{pmatrix}3\\-1\\4\end{pmatrix},\qquad
+\mathbf{q}=\begin{pmatrix}2\\-3\\0\end{pmatrix},\qquad
+\mathbf{r}=\begin{pmatrix}7\\1\\3\end{pmatrix}.
+$$
+
+
+Compute the side vectors:
+
+$$
+\overrightarrow{PQ}=\mathbf{q}-\mathbf{p}
+=\begin{pmatrix}2-3\\-3-(-1)\\0-4\end{pmatrix}
+=\begin{pmatrix}-1\\-2\\-4\end{pmatrix},
+$$
+
+
+$$
+\overrightarrow{PR}=\mathbf{r}-\mathbf{p}
+=\begin{pmatrix}7-3\\1-(-1)\\3-4\end{pmatrix}
+=\begin{pmatrix}4\\2\\-1\end{pmatrix}.
+$$
+
+
+Compute squared lengths to avoid unnecessary square roots:
+
+$$
+\lVert\overrightarrow{PQ}\rVert^2=(-1)^2+(-2)^2+(-4)^2=1+4+16=21,
+$$
+
+
+$$
+\lVert\overrightarrow{PR}\rVert^2=4^2+2^2+(-1)^2=16+4+1=21.
+$$
+
+
+Since $\lVert\overrightarrow{PQ}\rVert^2=\lVert\overrightarrow{PR}\rVert^2$, we have
+
+$$
+\lVert\overrightarrow{PQ}\rVert=\lVert\overrightarrow{PR}\rVert,
+$$
+
+so two sides of triangle $PQR$ are equal. Therefore $\triangle PQR$ is isosceles (with vertex at $P$).
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 (b) M is the midpoint of QR . Find the position vector of M .
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\mathbf{q}=\begin{pmatrix}2\\-3\\0\end{pmatrix},\qquad
+\mathbf{r}=\begin{pmatrix}7\\1\\3\end{pmatrix}
+$$
+
+
+Midpoint formula:
+
+$$
+\mathbf{m}=\frac{\mathbf{q}+\mathbf{r}}{2}
+=\frac{1}{2}\begin{pmatrix}2+7\\-3+1\\0+3\end{pmatrix}
+=\frac{1}{2}\begin{pmatrix}9\\-2\\3\end{pmatrix}
+=\begin{pmatrix}9/2\\-1\\3/2\end{pmatrix}.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 \((c)\) Calculate the area of the triangle PQR .
+
+
++++ <span style="color:blue">Hint</span>
+
+<hr style="border:1px solid red" >
+
+The area of triangle PQR is given by half of magnitude of the cross product of two side vectors:
+$$
+\text{Area}(\triangle PQR)=\Vert \tfrac{1}{2}\overrightarrow{PQ}\times\overrightarrow{PR} \Vert
+$$
+
+So try to Calculate the cross product \(\overrightarrow{PQ}\times\overrightarrow{PR}\) first. Then find its magnitude. Finally divide by 2 to get the area.
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+Given
+
+$$
+\overrightarrow{PQ}=\mathbf{q}-\mathbf{p}=\begin{pmatrix}-1\\-2\\-4\end{pmatrix},\qquad
+\overrightarrow{PR}=\mathbf{r}-\mathbf{p}=\begin{pmatrix}4\\2\\-1\end{pmatrix}.
+$$
+
+Their cross product is
+
+$$
+\overrightarrow{PQ}\times\overrightarrow{PR}=\begin{pmatrix}10\\-17\\6\end{pmatrix},
+$$
+
+so its magnitude is
+$$
+\Vert \overrightarrow{PQ}\times\overrightarrow{PR} \Vert
+=\sqrt{10^2+(-17)^2+6^2}=\sqrt{425}=5\sqrt{17}.
+$$
+
+The area of triangle PQR is half this magnitude:
+$$
+\text{Area}(\triangle PQR)=\tfrac{1}{2} \Vert\overrightarrow{PQ}\times\overrightarrow{PR}\Vert
+=\frac{5\sqrt{17}}{2}\approx 10.3078.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 7. The points $\mathrm{A}, \mathrm{B}, \mathrm{C}$ and D have position vectors $\left(\begin{array}{c}2 \\ -1 \\ 4\end{array}\right),\left(\begin{array}{l}-3 \\ -1 \\ 14\end{array}\right),\left(\begin{array}{c}-11 \\ 4 \\ 20\end{array}\right)$ and $\left(\begin{array}{c}-6 \\ 4 \\ 10\end{array}\right)$.
 (a) Write down the vector $\overrightarrow{\mathrm{AB}}$.
+
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\overrightarrow{AB}
+= \begin{pmatrix} -3\\ -1\\ 14 \end{pmatrix}
+- \begin{pmatrix} 2\\ -1\\ 4 \end{pmatrix}
+= \begin{pmatrix} -5\\ 0\\ 10 \end{pmatrix}.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 (b) Calculate the length BC
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\overrightarrow{BC} = \left(\begin{array}{c}2 \\ -1 \\ 4\end{array}\right) - \left(\begin{array}{l}-3 \\ -1 \\ 14\end{array}\right) = \left(\begin{array}{l}-8 \\ 5 \\ 6\end{array}\right)
+$$
+
+$$
+\lVert \overrightarrow{BC}\rVert
+= \sqrt{(-8)^2+5^2+6^2}
+= \sqrt{125}
+= 5\sqrt{5}
+\approx 11.1803.
+$$
+
+<hr style="border:1px solid red" >
+
++++
+
+<br>
+
 \((c)\) Prove that ABCD is a rhombus.
+
++++ <span style="color:green">Solutions</span>
+
+<hr style="border:1px solid red" >
+
+$$
+\mathbf{a}=\left(\begin{array}{c}2\\-1\\4\end{array}\right),\quad
+\mathbf{b}=\left(\begin{array}{c}-3\\-1\\14\end{array}\right),\quad
+\mathbf{c}=\left(\begin{array}{c}-11\\4\\20\end{array}\right),\quad
+\mathbf{d}=\left(\begin{array}{c}-6\\4\\10\end{array}\right).
+$$
+
+$$
+\overrightarrow{AB}=\mathbf{b}-\mathbf{a}=\left(\begin{array}{c}-5\\0\\10\end{array}\right),\qquad
+\overrightarrow{BC}=\mathbf{c}-\mathbf{b}=\left(\begin{array}{c}-8\\5\\6\end{array}\right),
+$$
+
+$$
+\overrightarrow{CD}=\mathbf{d}-\mathbf{c}=\left(\begin{array}{c}5\\0\\-10\end{array}\right),\qquad
+\overrightarrow{DA}=\mathbf{a}-\mathbf{d}=\left(\begin{array}{c}8\\-5\\-6\end{array}\right).
+$$
+
+Note that
+
+$$
+\overrightarrow{CD}=-\overrightarrow{AB},\qquad \overrightarrow{DA}=-\overrightarrow{BC},
+$$
+
+so opposite sides are parallel.
+
+Compute the side lengths:
+
+$$
+\lVert\overrightarrow{AB}\rVert=\sqrt{(-5)^2+0^2+10^2}=\sqrt{125}=5\sqrt{5},
+$$
+
+and
+
+$$
+\lVert\overrightarrow{BC}\rVert=\sqrt{(-8)^2+5^2+6^2}=\sqrt{125}=5\sqrt{5},
+$$
+
+similarly $\lVert\overrightarrow{CD}\rVert=\lVert\overrightarrow{DA}\rVert=5\sqrt{5}$.
+
+All four sides are equal in length and opposite sides are parallel; hence ABCD is a rhombus.
+
+<hr style="border:1px solid red" >
+
++++
 
 <br>
 
