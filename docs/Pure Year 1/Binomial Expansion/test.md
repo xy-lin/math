@@ -748,7 +748,7 @@ foreignObject[data-mjx-xml] {
     <div id="container-ruller" />
     <div id="preview-content">
       <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/lifeBeautiful.jpg" alt="drawing" width="500"/>
 </p>
 <div style="font-size: 22px;">
 <div><br><br></div>
@@ -787,7 +787,7 @@ Find the value of <span class="math-inline ">
 <br></div>
 </div>
 <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/lifeBeautiful2.jpg" alt="drawing" width="500"/>
 </p>
 
     </div>
