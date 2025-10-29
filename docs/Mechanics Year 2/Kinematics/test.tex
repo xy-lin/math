@@ -9,27 +9,41 @@
 1. In this question, $\mathbf{i}$ and $\mathbf{j}$ are the standard unit vectors in the $\mathrm{O} x$ and $\mathrm{O} y$ directions. An object has initial position $(2 \mathbf{i}-\mathbf{j}) \mathrm{m}$ and velocity $(-\mathbf{i}+4 \mathbf{j}) \mathrm{ms}^{-1}$. It has a constant acceleration of $(2 \mathbf{i}+5 \mathbf{j}) \mathrm{ms}^{-2}$.
 Calculate the object's velocity and position after four seconds.
 
-<br>
-
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
-<hr style="border:1px solid red" >
+Use the equations of velocity and position under constant acceleration:
+$$\mathbf{v}=\mathbf{u}+\mathbf{a} t$$
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position.
+
+</div>
 
 +++
-
-<br>
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+Calculate the velocity after 4 seconds using the equation:
+$$\mathbf{v}=\mathbf{u}+\mathbf{a} t$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration and t is the time.
+So,
+\[\mathbf{v}=(-\mathbf{i}+4 \mathbf{j})+(2 \mathbf{i}+5 \mathbf{j}) \times 4=(7 \mathbf{i}+24 \mathbf{j}) \mathrm{ms}^{-1}\]
+Now calculate the position after 4 seconds using the equation:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{s}_{0}$ is the initial position.
+So,
+\[\mathbf{s}=(-\mathbf{i}+4 \mathbf{j}) \times 4+\frac{1}{2}(2 \mathbf{i}+5 \mathbf{j}) \times 4^{2}+(2 \mathbf{i}-\mathbf{j})=(26 \mathbf{i}+42 \mathbf{j}) \mathrm{m}\]
+
+
+</div>
 
 +++
 
 <br>
+
 
 2. The position vector, r , of a particle at time t is given by
 $$
@@ -38,47 +52,358 @@ $$
 where i and j are the standard unit vectors, lengths are in metres and time is in seconds.
 (a) Find an expression for the acceleration of the particle.
 
-<br>
-
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
-<hr style="border:1px solid red" >
+To find the acceleration, we first need to find the velocity by differentiating the position vector with respect to time.
+Then to find the acceleration, we can ____ the velocity vector with respect to time.
+
+</div>
 
 +++
-
-<br>
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+
+To find the acceleration, we first need to find the velocity by differentiating the position vector with respect to time:
+\[\mathbf{v}=\frac{\mathrm{d} \mathbf{r}}{\mathrm{d} t}=\frac{\mathrm{d}}{\mathrm{d} t}\left(t^{2} \mathbf{i}+\left(5 t-2 t^{2}\right) \mathbf{j}\right)=2 t \mathbf{i}+(5-4 t) \mathbf{j}\]
+Now, we differentiate the velocity vector with respect to time to find the acceleration:
+\[\mathbf{a}=\frac{\mathrm{d} \mathbf{v}}{\mathrm{d} t}=\frac{\mathrm{d}}{\mathrm{d} t}\left(2 t \mathbf{i}+(5-4 t) \mathbf{j}\right)=2 \mathbf{i}-4 \mathbf{j}\]
+
+
+</div>
+
++++
+
+
+(b) Is the particle ever at rest?
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+One method to find when the particle is at rest is to set the velocity vector equal to zero and solve for t. And check if there is a common solution for both components.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find when the particle is at rest, we set the velocity vector equal to zero and solve for t:
+\[2 t \mathbf{i}+(5-4 t) \mathbf{j}=0\]
+This gives us the equations for component i and j respectively:
+\[2 t=0 \quad \Rightarrow \quad t=0\]
+\[5-4 t=0 \quad \Rightarrow \quad t=\frac{5}{4}\]
+Since we get different values for t from the two equations, the particle is never at rest.
+
+</div>
 
 +++
 
 <br>
 
-(b) Is the particle ever at rest?
 3. A particle has acceleration $\mathbf{a}=\binom{2 t}{3} \mathrm{~ms}^{-2}$ at time $t$. Initially the particle has velocity $\binom{1}{-2} \mathrm{~ms}^{-1}$ and is at the point $(2,0)$. Find the position vector of the particle at time $t$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+To find the position vector of the particle at time t, we first need to find the velocity by integrating the acceleration with respect to time and then integrate the velocity to find the position. The constants of integration can be found using the initial conditions. 
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the position vector of the particle at time t, we first need to find the velocity by integrating the acceleration with respect to time:
+\[\mathbf{v}=\int \mathbf{a} \mathrm{d} t=\int\binom{2 t}{3} \mathrm{d} t=\binom{t^{2}+C_{1}}{3 t+C_{2}}\]
+where $C_{1}$ and $C_{2}$ are constants of integration. We can find these constants using the initial velocity:
+\[\binom{t^{2}+C_{1}}{3 t+C_{2}}=\binom{1}{-2} \quad \text { when } t=0\]
+This gives us:
+\[C_{1}=1\]
+\[C_{2}=-2\]
+So the velocity vector is:
+\[\mathbf{v}=\binom{t^{2}+1}{3 t-2}\]
+Now, we integrate the velocity vector with respect to time to find the position vector:
+\[\mathbf{r}=\int \mathbf{v} \mathrm{d} t=\int\binom{t^{2}+1}{3 t-2} \mathrm{d} t=\binom{\frac{t^{3}}{3}+t+C_{3}}{\frac{3 t^{2}}{2}-2 t+C_{4}}\]
+where $C_{3}$ and $C_{4}$ are constants of integration. We can find these constants using the initial position:
+\[\binom{\frac{t^{3}}{3}+t+C_{3}}{\frac{3 t^{2}}{2}-2 t+C_{4}}=\binom{2}{0} \quad \text { when } t=0\]
+This gives us:
+\[C_{3}=2\]
+\[C_{4}=0\]
+So the position vector is:
+\[\mathbf{r}=\binom{\frac{t^{3}}{3}+t+2}{\frac{3 t^{2}}{2}-2 t}\]
+
+</div>
+
++++
+
+<br>
+
 4. A particle has velocity $\mathbf{v}=(2 t+1) \mathbf{i}-\left(3 t^{2}-1\right) \mathbf{j} \mathrm{ms}^{-1}$ and is initially at the origin. Find its distance from the origin after 3 seconds.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Again, to find the position vector of the particle at time t, we integrate the velocity vector with respect to time. The constant of integration can be found using the initial condition. Finally, we can find the distance from the origin using the magnitude of the position vector.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the position vector of the particle at time t, we integrate the velocity vector with respect to time:
+\[\mathbf{r}=\int \mathbf{v} \mathrm{d} t=\int\left((2 t+1) \mathbf{i}-\left(3 t^{2}-1\right) \mathbf{j}\right) \mathrm{d} t=\left(t^{2}+t+C_{1}\right) \mathbf{i}+\left(-t^{3}+t+C_{2}\right) \mathbf{j}\]
+where $C_{1}$ and $C_{2}$ are constants of integration. We can find these constants using the initial position:
+\[\left(t^{2}+t+C_{1}\right) \mathbf{i}+\left(-t^{3}+t+C_{2}\right) \mathbf{j}=0 \quad \text { when } t=0\]
+This gives us:
+\[C_{1}=0\]
+\[C_{2}=0\]
+So the position vector is:
+\[\mathbf{r}=\left(t^{2}+t\right) \mathbf{i}+\left(-t^{3}+t\right) \mathbf{j}\]
+Now, we can find the position vector at t=3 seconds:
+\[\mathbf{r}=\left(3^{2}+3\right) \mathbf{i}+\left(-3^{3}+3\right) \mathbf{j}=12 \mathbf{i}-24 \mathbf{j}\]
+Finally, we can find the distance from the origin using the magnitude of the position vector:
+\[\text { Distance }=\sqrt{(12)^{2}+(-24)^{2}}=\sqrt{144+576}=\sqrt{720}=12 \sqrt{5} \mathrm{~m}\]
+
+</div>
+
++++
+
+<br>
+
 5. In this question, the vectors i and j and unit vectors east and north respectively.
+
 (a) A particle moves in two dimensions with constant acceleration. Initially it has position vector $3 \mathbf{i}+2 \mathbf{j} \mathrm{~m}$ relative to a fixed origin and has initial velocity $\mathbf{i}+\mathbf{j} \mathrm{ms}^{-1}$. After 4 seconds it has position vector $7 \mathbf{i}-4 \mathbf{j} \mathrm{~m}$.
 What is its velocity at that time?
-(b) The particle then continues at constant speed.
 
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+First find the acceleration using the eqqatioin of position and initial velocity.
+Then use the acceleration to find the velocity at t=4 seconds.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the velocity at t=4 seconds, we first need to find the acceleration using the position and initial velocity. We can use the equations of motion under constant acceleration:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position.
+So,
+\[7 \mathbf{i}-4 \mathbf{j}=(\mathbf{i}+\mathbf{j}) \times 4+\frac{1}{2} \mathbf{a} \times 4^{2}+(3 \mathbf{i}+2 \mathbf{j})\]
+This simplifies to:
+\[\mathbf{a}=-\frac{5}{4} \mathbf{j} \space \mathrm{ms}^{-2}\]
+Now, we can find the velocity at t=4 seconds using the equation:
+$$\mathbf{v}=\mathbf{u}+\mathbf{a} t$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration and t is the time.
+So,
+
+\[\mathbf{v}=(\mathbf{i}+\mathbf{j})+\left(-\frac{5}{4} \mathbf{j}\right) \times 4=\mathbf{i}-4 \mathbf{j} \space \mathrm{ms}^{-1}\]
+
+</div>
+
++++
+
+<br>
+
+(b) The particle then continues at constant speed.
 Calculate how long the particle has been travelling at constant speed when it is southeast of the origin.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Based on the question, for the particle to be southeast of the origin, its i and j components must be equal in magnitude but opposite in sign, that is, $position = xi - xj$. 
+And if the particle is travelling at constant speed, then its acceleration is 0.
+So we can use the equation of motion to find the time taken to reach this position, with 0 acceleration.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find how long the particle has been travelling at constant speed when it is southeast of the origin, we first need to find the position vector when it is southeast of the origin. A point is southeast of the origin when its i and j components are equal in magnitude but opposite in sign. So we set the position vector equal to:
+\[\mathbf{r}=x \mathbf{i}-x \mathbf{j}\]
+where x is a positive real number. 
+
+Because the particle travel with constant speed, that means the acceleration is 0. So we can find the time taken to reach this position using the equation of motion:
+$$\mathbf{s}=\mathbf{u} t+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the velocity, t is the time and $\mathbf{s}_{0}$ is the initial position.
+So,
+\[x \mathbf{i}-x \mathbf{j}=(\mathbf{i}-4 \mathbf{j}) t+(7 \mathbf{i}-4 \mathbf{j})\]
+This gives us the equations:
+\[x= t+7\]
+\[-x=-4 t-4\]
+solving these simultaneously gives:
+\[t= 1\]
+So the particle has been travelling at constant speed for 1 second when it is southeast of the origin.
+
+
+</div>
+
++++
+
+<br>
+
 6. In this question, $\mathbf{i}$ and $\mathbf{j}$ are unit vectors which are horizontal and vertically upwards. The units for postion are metres.
 A particle has mass 4 kg .
+
 (a) Write down the weight of the particle in vector form.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use weight equation:
+\[\mathbf{W}=m \mathbf{g}\]
+where m is the mass of the particle and g is the acceleration due to gravity.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+The weight of the particle is given by the equation:
+\[\mathbf{W}=m \mathbf{g}\]
+where m is the mass of the particle and g is the acceleration due to gravity. The acceleration due to gravity is approximately $9.8 \mathrm{~ms}^{-2}$ downwards, which can be represented as $-9.8 \mathbf{j} \mathrm{~ms}^{-2}$ in vector form. (Because j is vertically upwards.)
+The weight vector is:
+\[\mathbf{W}=4 \times(-9.8 \mathbf{j})=-39.2 \mathbf{j} \space \mathrm{N}\]
+
+</div>
+
++++
+
+<br>
 
 The particle is acted on by two forces $(3 \mathbf{i}+2 \mathbf{j}) \mathrm{N}$ and $(-2 \mathbf{i}+8 \mathbf{j}) \mathrm{N}$.
 (b) Find the acceleration of the particle.
 
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+To find the acceleration of the particle, we first need to find the net force acting on the particle by adding all the forces together, including the weight.
+Then, we can find the acceleration using Newton's second law:
+\[\mathbf{F}_{\text {net }}=m \mathbf{a} \quad \Rightarrow \quad \mathbf{a}=\frac{\mathbf{F}_{\text {net }}}{m}\]
+where $\mathbf{F}_{\text {net }}$ is the net force, m is the mass of the particle and a is the acceleration.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the acceleration of the particle, we first need to find the net force acting on the particle by adding all the forces together, including the weight:
+\[\mathbf{F}_{\text {net }}=(3 \mathbf{i}+2 \mathbf{j})+(-2 \mathbf{i}+8 \mathbf{j})+(-39.2 \mathbf{j})=(1 \mathbf{i}-29.2 \mathbf{j}) \space \mathrm{N}\]
+Now, we can find the acceleration using Newton's second law:
+\[\mathbf{F}_{\text {net }}=m \mathbf{a} \quad \Rightarrow \quad \mathbf{a}=\frac{\mathbf{F}_{\text {net }}}{m}=\frac{(1 \mathbf{i}-29.2 \mathbf{j})}{4}=\left(0.25 \mathbf{i}-7.3 \mathbf{j}\right) \space \mathrm{ms}^{-2}\]
+
+
+</div>
+
++++
+
+<br>
+
 The particle is initially at rest at a point with position vector $(4 \mathbf{i}+7 \mathbf{j}) \mathrm{m}$.
 \((c)\) Find the position of the particle after 3s.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use the equations of motion under constant acceleration:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position. Since the particle is initially at rest, $\mathbf{u}=0$.
+The acceleration was found in part (b).
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the position of the particle after 3 seconds, we can use the equation of motion under constant acceleration:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position. Since the particle is initially at rest, $\mathbf{u}=0$.
+So,
+\[\mathbf{s}=0 \times 3+\frac{1}{2}\left(0.25 \mathbf{i}-7.3 \mathbf{j}\right) \times 3^{2}+(4 \mathbf{i}+7 \mathbf{j})\]
+This simplifies to:
+\[\mathbf{s}=\left(4+1.125\right) \mathbf{i}+\left(7-32.85\right) \mathbf{j}=\left(5.125 \mathbf{i}-25.85 \mathbf{j}\right) \mathrm{m}\]
+
+</div>
+
++++
+
+<br>
+
+
+
 (d) Find the time at which the particle is at the same height as the origin.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+For the particle to be at the same height as the origin, the j component of the position vector must be equal to 0.
+We can use the equation of motion under constant acceleration:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position. Since the particle is initially at rest, $\mathbf{u}=0$.
+
+Constructing equation based on j component and solving for t.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the time at which the particle is at the same height as the origin, we need to find when the j component of the position vector is equal to 0. We can use the equation of motion under constant acceleration:
+$$\mathbf{s}=\mathbf{u} t+\frac{1}{2} \mathbf{a} t^{2}+\mathbf{s}_{0}$$
+where $\mathbf{u}$ is the initial velocity, a is the acceleration, t is the time and $\mathbf{s}_{0}$ is the initial position. Since the particle is initially at rest, $\mathbf{u}=0$.
+So,
+\[\mathbf{s}=0 \times t+\frac{1}{2}\left(0.25 \mathbf{i}-7.3 \mathbf{j}\right) \times t^{2}+(4 \mathbf{i}+7 \mathbf{j})\]
+combining terms of the j component, we have:
+\[-\frac{7.3}{2} t^{2}+7=0\]
+Solving for t gives:
+\[t=\sqrt{\frac{14}{7.3}} \approx 1.385 \mathrm{~s}\]
+t cannot be negative, so we discard the negative root.
+
+</div>
+
++++
+
+<br>
+
 
 <br>
 

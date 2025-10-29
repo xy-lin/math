@@ -55,8 +55,8 @@ nav:
     #   - Statistics: './Homeworks/statistics.md'
     # - Past Papers:
     #   - 2024: './Past Papers/test.md'
-    # - Draft: 
-    #    - Draft: './Draft/draft.md'
+    - Draft: 
+       - Draft: './Draft/draft.md'
 
 theme: material
 
