@@ -53,9 +53,12 @@ nav:
     #   - Pure: './Homeworks/pure.md'
     #   - Mechanics: './Homeworks/mechanics.md'
     #   - Statistics: './Homeworks/statistics.md'
-    - Past Papers:
-      - 2024: './Past Papers/test.md'
-    - Draft: 
-       - Draft: './Draft/draft.md'
+    # - Past Papers:
+    #   - 2024: './Past Papers/test.md'
+    # - Draft: 
+    #    - Draft: './Draft/draft.md'
 
-theme: readthedocs
+theme: material
+
+extra_css:
+  - stylesheets/extra.css

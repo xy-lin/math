@@ -2,29 +2,71 @@
 <img src="/images/iamlegend.jpg" alt="drawing" width="500"/>
 </p>
 
-<div style="font-size: 22px;">
+<div style="font-size: 22px;width:800px">
 
 <br><br>
 
 1. (a) By considering turning points, show that $x^{3}-3 x^{2}+5=0$ has only one real root and that this root lies between -2 and -1
 
-<br>
-
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
+
+Find the cubic function values at -2 and -1, and identify the "change of sign", that means at least one root in that interval.
+Differentiate the cubic to find its turning points. Then find second derivative to classify the turning points as local maxima or minima. If both local minima and maxima are above or below the x-axis, then there is only one real root between -2 and -1.
+
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+Let
+
+$$
+f(x)=x^{3}-3x^{2}+5.
+$$
+
+$$
+f(-2)=(-2)^{3}-3(-2)^{2}+5=-8-12+5=-15<0,
+$$
+
+$$
+f(-1)=(-1)^{3}-3(-1)^{2}+5=-1-3+5=1>0.
+$$
+
+Since $f$ is continuous and changes sign on $[-2,-1]$, the Intermediate Value Theorem guarantees at least one root in the interval $(-2,-1)$.
+
+Then do first derivative to find turning points:
+
+$$
+f'(x)=3x^{2}-6x=3x(x-2),
+$$
+
+so the turning points are $x=0$ and $x=2$. 
+
+Now calculate the second derivative to find the nature of these turning points (maxima or minima):
+
+$$
+f''(x)=6x-6,
+$$
+
+hence $f''(0)=-6<0$ (a local maximum at $x=0$) and $f''(2)=6>0$ (a local minimum at $x=2$).
+
+Evaluate $f$ at these points:
+
+$$
+f(0)=5>0,\qquad f(2)=8-12+5=1>0.
+$$
+
+Since both the local maximum and local minimum lie above the $x$-axis, the cubic changes sign exactly once as it goes from $-\infty$ to $+\infty$. Therefore $f(x)=0$ has exactly one real root.
+
+Hence the equation $x^{3}-3x^{2}+5=0$ has exactly one real root, and that root lies between $-2$ and $-1$.
+
+</div>
 
 +++
 
@@ -32,56 +74,606 @@
 
 (b) Show that this root is -1.104 , correct to 3 d.p.
 
-<br>
-
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+Since the question says the root is -1.104 and asks for 3 decimal places, we can try -1.1045 and -1.1035 to see which side of the root they are on. Then we can keep halving the interval until we reach the desired accuracy.
+
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+I would try with $f(-1.1045) = -0.00716 < 0$ and $f(-1.1035) = 0.003118 > 0$. So the root is between -1.1045 and -1.1035.
+Since it asks for 3 decimal places, we can stop here and say the root is $-1.1045 < root < -1.1035$, when round any values inside this range to 3 decimal places, it would be $-1.104$. Isn't it?
+
+</div> 
 
 +++
 
 <br>
 
 2. (a) Show that the equation $\mathrm{e}^{x}=x^{3}-1$ has a real root between $x=2$ and $x=3$.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Evaluate the function at the endpoints of the interval and check for a sign change.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Consider the function
+
+$$
+f(x)=\mathrm{e}^{x}-x^{3}+1,
+$$
+
+The function $f$ is continuous for all real $x$. Evaluate $f$ at the endpoints of the interval $[2,3]$:
+
+$$
+f(2)=\mathrm{e}^{2}-2^{3}+1=\mathrm{e}^{2}-7\approx 7.389056-7=0.389056>0,
+$$
+
+
+$$
+f(3)=\mathrm{e}^{3}-3^{3}+1=\mathrm{e}^{3}-26\approx 20.085537-26=-5.914463<0.
+$$
+
+
+Since $f$ is continuous on $[2,3]$ and $f(2)$ and $f(3)$ have opposite signs, the Intermediate Value Theorem guarantees the existence of at least one $c\in(2,3)$ with
+
+$$
+f(c)=0.
+$$
+
+Hence there is a real root of $\mathrm{e}^{x}-x^{3}+1=0$ in the interval $(2,3)$.
+
+
+$$
+\text{There exists }c\in(2,3)\text{ such that }\mathrm{e}^{c}=c^{3}-1.
+$$
+
+</div>
+
++++
 (b) Use the iterative formula $x_{n+1}=\frac{\mathrm{e}^{x_{n}}+1}{x_{n}^{2}}$, starting from $x_{0}=2$, to find two further approximations to the root.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use "fixed point iteration" method. Start with the initial guess $x_0=2$, then compute $x_1$ and $x_2$ using the given iterative formula.
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Two iterations of the map $x_{n+1}=\dfrac{\mathrm{e}^{x_n}+1}{x_n^{2}}$ starting at $x_0=2$
+
+Given $x_{n+1}=\dfrac{\mathrm{e}^{x_n}+1}{x_n^{2}}$ and $x_0=2$, compute $x_1$ and $x_2$.
+
+First iteration:
+
+$$
+x_1=\frac{\mathrm{e}^{x_0}+1}{x_0^{2}}
+=\frac{\mathrm{e}^{2}+1}{2^{2}}
+=\frac{\mathrm{e}^{2}+1}{4}
+\approx \frac{7.389056099+1}{4}
+=\frac{8.389056099}{4}
+\approx 2.09726402475.
+$$
+
+
+Second iteration (use the value of $x_1$ above):
+
+$$
+x_2=\frac{\mathrm{e}^{x_1}+1}{x_1^{2}}
+\approx \frac{\mathrm{e}^{2.09726402475}+1}{(2.09726402475)^{2}}
+\approx \frac{8.143854891+1}{4.398525382}
+\approx \frac{9.143854891}{4.398525382}
+\approx 2.078845000.
+$$
+
+
+Therefore the two further approximations are
+
+$$
+x_1\approx 2.097264025,\qquad x_2\approx 2.078845000.
+$$
+
+</div>
+
++++
 \((c)\) Show that the root is 2.081 correct to 3 decimal places.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Can try same method as in question 1(b), use "sign of change" method to verify the root is between two values that round to 2.081 when rounded to 3 decimal places.
+These two values can be 2.0805 and 2.0815.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Consider the fixed-point iteration
+
+$$
+f(x) = \mathrm{e}^{x}-x^{3}+1
+$$
+
+Check if it is correct to 3 decimal places by using "sign of change" method:
+Using $x=2.0805$ and $x=2.0815$
+$$
+f(2.0805) = e^(2.0805) - (2.0805)^3 + 1 = 0.00127 >0
+f(2.0815) = e^(2.0815) - (2.0815)^3 + 1 = -0.00211 <0
+$$
+
+Since there is a sign change between $x=2.0805$ and $x=2.0815$, the root lies between these two values. Therefore, the root is approximately
+
+$$
+r\approx 2.081\quad\text{(correct to three decimal places).}
+$$
+
+</div>
+
++++
+
+<br>
+
 3. (a) Show that the gradient of $y=2 x^{3}+4 x-5$ is always positive and deduce that the equation $2 x^{3}+4 x-5=0$ has one real root only.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+If the derivative (gradient) is always positive, then the function is strictly increasing for all values of x
+A strictly increasing continuous function can have at most one real root. Then just need to show a root exists by using "change of sign" method.
+When using change of sign method, try evaluating at some special points, like $x=0, x=1$.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Consider the function $y=2x^{3}+4x-5$
+
+Differentiate with respect to $x$:
+
+$$
+\frac{dy}{dx}=6x^{2}+4.
+$$
+
+Since $x^{2}\ge 0$ for all real $x$, we have
+
+$$
+6x^{2}+4\ge 4>0,
+$$
+
+so $\dfrac{dy}{dx}>0$ for every real $x$. Hence the function is strictly increasing on $\mathbb{R}$.
+
+A strictly increasing continuous function can have at most one real root. To show a root exists, evaluate at two points:
+
+$$
+y(0)=2\cdot 0^{3}+4\cdot 0-5=-5<0,
+\qquad
+y(1)=2\cdot 1^{3}+4\cdot 1-5=1>0.
+$$
+
+By the Intermediate Value Theorem there is some $c\in(0,1)$ with $y(c)=0$. Combining existence with uniqueness we conclude that the equation
+
+$$
+2x^{3}+4x-5=0
+$$
+
+has exactly one real root (located in the interval $(0,1)$).
+
+</div>
+
++++
+
 (b) Show that this root lies between $x=0$ and $x=1$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+sometimes the hint is on the question itself :) This question b is hint for question a when doing "sign of change".
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Let $f(x)=2x^{3}+4x-5$. Evaluate at the endpoints $x=0$ and $x=1$:
+
+$$
+f(0)=2\cdot 0^{3}+4\cdot 0-5=-5<0,
+\qquad
+f(1)=2\cdot 1^{3}+4\cdot 1-5=1>0.
+$$
+
+Since $f$ is a polynomial, it is continuous on $\mathbb{R}$. By the Intermediate Value Theorem (change of sign) there exists some $c\in(0,1)$.
+
+$$
+\boxed{\text{The real root lies between }x=0\text{ and }x=1.}
+$$
+
+</div>
+
++++
+
 \((c)\) Show that the equation can be rearranged into the form $x=\frac{5}{2 x^{2}+4}$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Start from the equation
+
+$$
+2x^{3}+4x-5=0.
+$$
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Start from the equation
+
+$$
+2x^{3}+4x-5=0.
+$$
+
+Bring the constant to the right-hand side:
+
+$$
+2x^{3}+4x=5.
+$$
+
+Factor out $x$ on the left:
+
+$$
+x(2x^{2}+4)=5.
+$$
+
+Divide both sides by $2x^{2}+4$. Note that $2x^{2}+4>0$ for all real $x$, so this division is valid, thus the equation can be written in the fixed-point form:
+
+$$
+x=\frac{5}{2x^{2}+4}.
+$$
+
+</div>
+
++++
+
 (d) Using the iterative formula $x_{n+1}=\frac{5}{2 x_{n}^{2}+4}$ and starting from $x_{0}=1$, find the next two approximations $x_{1}$ and $x_{2}$ to the root.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Using the formula from question (c), substitute $x_0=1$ to find $x_1$, then substitute $x_1$ to find $x_2$.
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the iteration
+
+$$
+x_{n+1}=\frac{5}{2x_{n}^{2}+4},
+$$
+
+and starting with $x_0=1$, we compute:
+
+
+$$
+x_1=\frac{5}{2\cdot 1^{2}+4}=\frac{5}{6}\approx 0.8333333333,
+$$
+
+
+
+$$
+x_2=\frac{5}{2\left(\dfrac{5}{6}\right)^{2}+4}
+=\frac{5}{2\cdot \dfrac{25}{36}+4}
+=\frac{5}{\dfrac{50}{36}+4}
+=\frac{5}{\dfrac{97}{18}}
+=\frac{90}{97}\approx 0.9278350515.
+$$
+
+
+
+$$
+x_1=\frac{5}{6}\approx 0.8333333,\qquad x_2=\frac{90}{97}\approx 0.9278351
+$$
+
+
+</div>
+
++++
+
 (e) The diagram below shows part of the graphs of $y=x$ and $y=\frac{5}{2 x^{2}+4}$, and the position of $x_{0}$.
+
 ![](https://cdn.mathpix.com/cropped/2025_10_25_1dc8f5dcfee0b81227e5g-1.jpg?height=378&width=791&top_left_y=1738&top_left_x=691)
 
-Copy the diagram and draw on it a staircase or cobweb diagram to illustrate how the iterations converge to the root. Indicate the positions of $x_{1}$ and $x_{2}$ on the $x$-axis. [2]
+Copy the diagram and draw on it a staircase or cobweb diagram to illustrate how the iterations converge to the root. Indicate the positions of $x_{1}$ and $x_{2}$ on the $x$-axis.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Draw the CobWeb diagram step by step:
+1. Start at the point $x_0 = 1$ on the x-axis.
+2. Then draw $x_1$ and $x_2$ using the iterative formula.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Pure2_Numerical_Q3_e_CobWeb_plot.png" alt="drawing" width="800"/>
+</p>
+
+</div>
+
++++
+
 (f) Show that the root is 0.893 correct to 3 decimal places.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Same as previous "sign of change" method, try evaluating at two values that round to 0.893 when rounded to 3 decimal places, e.g. 0.8925 and 0.8935.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Consider the function $f(x)=2x^{3}+4x-5$. Evaluate at two points:
+$$
+f(0.8925)=2(0.8925)^{3}+4(0.8925)-5\approx -0.0021<0,
+$$
+$$
+f(0.8935)=2(0.8935)^{3}+4(0.8935)-5\approx 0.0034>0.
+$$
+Since there is a sign change between $x=0.8925$ and $x=0.8935$, the root lies between these two values. Therefore, the root is approximately 0.893 correct to 3 decimal places.
+
+</div>
+
++++
+
+<br>
+
 4. A sector AOB of a circle with radius 10 cm and centre O has an angle AOB of $\theta$ radians.
 The chord AB divides the sector into two regions of equal area.
 ![](https://cdn.mathpix.com/cropped/2025_10_25_1dc8f5dcfee0b81227e5g-2.jpg?height=386&width=489&top_left_y=217&top_left_x=1376)
 (a) Show that $\theta$ satisfies the equation $2 \sin \theta-\theta=0$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+The area of the sector AOB is given by $\frac{1}{2} r^2 \theta$. The area of triangle AOB can be calculated using the formula $\frac{1}{2} ab \sin C$. Set the area of the triangle equal to half the area of the sector and simplify to derive the equation.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+The area of sector AOB is given by 
+$$\text{Area of sector} = \frac{1}{2} r^2 \theta = \frac{1}{2} \cdot 10^2 \cdot \theta = 50\theta.$$
+The area of triangle AOB can be calculated using the formula
+$$\text{Area of triangle} = \frac{1}{2} ab \sin C = \frac{1}{2} \cdot 10 \cdot 10 \cdot \sin \theta = 50 \sin \theta.$$
+Since the chord AB divides the sector into two regions of equal area, we have
+$$\text{Area of triangle} = \frac{1}{2} \cdot \text{Area of sector}.$$
+Substituting the expressions for the areas, we get
+$$50 \sin \theta = \frac{1}{2} \cdot 50 \theta.$$
+Simplifying this equation gives
+$$2 \sin \theta = \theta.$$
+Rearranging, we obtain the required equation:
+$$2 \sin \theta - \theta = 0.$$
+
+
+</div>
+
++++
+
+
 (b) Use 3 iterations of the Newton-Raphson method, starting from $\theta=2$, to find the value of $\theta$ correct to 4 decimal places.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+calculate the derivative of the function $f(\theta) = 2 \sin \theta - \theta$, then apply the Newton-Raphson iteration formula:
+$$\theta_{n+1} = \theta_n - \frac{f(\theta_n)}{f'(\theta_n)}.$$
+Perform 3 iterations starting from $\theta_0 = 2$.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+We want to solve the equation $f(\theta) = 2 \sin \theta - \theta = 0$ using the Newton-Raphson method. The derivative of $f(\theta)$ is given by
+$$f'(\theta) = 2 \cos \theta - 1.$$
+The Newton-Raphson iteration formula is given by
+$$\theta_{n+1} = \theta_n - \frac{f(\theta_n)}{f'(\theta_n)}.$$
+Starting with an initial guess of $\theta_0 = 2$, we perform the iterations as follows:
+1st iteration:
+$$f(2) = 2 \sin 2 - 2 \approx -0.0907,$$
+$$f'(2) = 2 \cos 2 - 1 \approx -2.8323,$$
+$$\theta_1 = 2 - \frac{-0.0907}{-2.8323} \approx 1.9680.$$
+2nd iteration:
+$$f(1.9680) = 2 \sin 1.9680 - 1.9680 \approx -0.0005,$$
+$$f'(1.9680) = 2 \cos 1.9680 - 1 \approx -2.8794,$$
+$$\theta_2 = 1.9680 - \frac{-0.0005}{-2.8794} \approx 1.9678.$$
+3rd iteration:
+$$f(1.9678) = 2 \sin 1.9678 - 1.9678 \approx -0.0000,$$
+$$f'(1.9678) = 2 \cos 1.9678 - 1 \approx -2.8795,$$
+$$\theta_3 = 1.9678 - \frac{-0.0000}{-2.8795} \approx 1.9678.$$
+After 3 iterations, we find that $\theta \approx 1.9678$ correct to 4 decimal places.
+
+</div>
+
++++
+
+<br>
+
 5. The diagram shows a cross-section of a tunnel. The height is measured in metres every 0.5 metres along the cross section.
 ![](https://cdn.mathpix.com/cropped/2025_10_25_1dc8f5dcfee0b81227e5g-2.jpg?height=452&width=769&top_left_y=856&top_left_x=1096)
 (a) Use the trapezium rule to estimate the area of the cross-section.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+The trapezium rule formula is given by:
+$$\text{Area} \approx \frac{h}{2} \left( y_0 + 2(y_1 + y_2 + \ldots + y_{n-1}) + y_n \right),$$
+where $h$ is the width of each interval and $y_i$ are the heights at each measurement point. Here, $h = 0.5$ metres and the heights are given at intervals of 0.5 metres.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the trapezium rule, we can estimate the area of the cross-section of the tunnel. The heights at each measurement point are as follows:
+\[y_0 = 0, \quad y_1 = 1.35, \quad y_2 = 1.84, \quad y_3 = 1.85, \quad y_4 = 2.12, \quad y_5 = 1.86, \quad y_6 = 0.\]
+The width of each interval is \(h = 0.5\) metres. The trapezium rule formula is given by:
+$$\text{Area} \approx \frac{h}{2} \left( y_0 + 2(y_1 + y_2 + y_3 + y_4 + y_5) + y_6 \right).$$
+Substituting the values, we get:
+$$\text{Area} \approx \frac{0.5}{2} \left( 0 + 2(1.35 + 1.84 + 1.85 + 2.12 + 1.86) + 0 \right).$$
+Calculating the sum inside the parentheses:
+$$1.35 + 1.84 + 1.85 + 2.12 + 1.86 = 8.02.$$
+Now substituting back into the area formula:
+$$\text{Area} \approx 4.01 \text{ m}^2.$$
+
+
+</div>
+
++++
+
 (b) Is it an under-estimate or over-estimate?
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+Check if the curve has points of inflection. If it is always concave up, the trapezium rule gives an underestimate; if always concave down, it gives an overestimate. But if there are points of inflection, we cannot usually tell.
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Since there is a point of inflection in the curve, the curve changes between concave up and concave down, we cannot usually tell if it is an over-estimate or under-estimate just by looking at the graph.
+
+</div>
+
++++
+
+<br>
+
 6. An estimate is required for the integral $\int_{0}^{1} x \sqrt{x^{3}+1} \mathrm{~d} x$.
 
 Using 5 rectangles, find overestimates and underestimates for the value of the integral.
 
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+Firstly, decide whether the function \(f(x) = x \sqrt{x^3 + 1}\) is increasing or decreasing on the interval \([0, 1]\). Then, for the overestimate using right endpoints, divide the interval into 5 equal subintervals and calculate the function values at the right endpoints. For the underestimate using left endpoints, use the left endpoints of the same subintervals.
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+The function \(f(x) = x \sqrt{x^3 + 1}\) is increasing on the interval \([0, 1]\).
+To find the overestimate using right endpoints, we divide the interval \([0, 1]\) into 5 equal subintervals of width \(\Delta x = \frac{1-0}{5} = 0.2\). The right endpoints are \(x_1 = 0.2\), \(x_2 = 0.4\), \(x_3 = 0.6\), \(x_4 = 0.8\), and \(x_5 = 1.0\).
+Calculating the function values at these points:
+\[f(0.2) = 0.2 \sqrt{(0.2)^3 + 1} \approx 0.2040,\]
+\[f(0.4) = 0.4 \sqrt{(0.4)^3 + 1} \approx 0.4320,\]
+\[f(0.6) = 0.6 \sqrt{(0.6)^3 + 1} \approx 0.6960,\]
+\[f(0.8) = 0.8 \sqrt{(0.8)^3 + 1} \approx 0.9920,\]
+\[f(1.0) = 1.0 \sqrt{(1.0)^3 + 1} = 1.4142.\]
+The overestimate is given by:
+\[\text{Overestimate} = \Delta x \left( f(0.2) + f(0.4) + f(0.6) + f(0.8) + f(1.0) \right)\]
+
+\[\approx 0.2 \left( 0.2040 + 0.4320 + 0.6960 + 0.9920 + 1.4142 \right) \approx 0.74724\]
+
+
+To find the underestimate using left endpoints, we use the left endpoints \(x_0 = 0.0\), \(x_1 = 0.2\), \(x_2 = 0.4\), \(x_3 = 0.6\), and \(x_4 = 0.8\).
+Calculating the function values at these points:
+\[f(0.0) = 0.0 \sqrt{(0.0)^3 + 1} = 0.0,\]
+\[f(0.2) = 0.2 \sqrt{(0.2)^3 + 1} \approx 0.2040,\]
+\[f(0.4) = 0.4 \sqrt{(0.4)^3 + 1} \approx 0.4320,\]
+\[f(0.6) = 0.6 \sqrt{(0.6)^3 + 1} \approx 0.6960,\]
+\[f(0.8) = 0.8 \sqrt{(0.8)^3 + 1} \approx 0.9920.\]
+The underestimate is given by:
+\[\text{Underestimate} = \Delta x \left( f(0.0) + f(0.2) + f(0.4) + f(0.6) + f(0.8) \right)\]
+\[\approx 0.2 \left( 0.0 + 0.2040 + 0.4320 + 0.6960 + 0.9920 \right) \approx 0.4648\]
+
+</div>
+
++++
+
+<br>
+
 <br>
 
 </div>
+
 <p align="center">
 <img src="/images/iamlegend2.jpg" alt="drawing" width="500"/>
 </p>
