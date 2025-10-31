@@ -30,3 +30,11 @@ Uee Chrome dev tool to pick the elements need to change, then search inside `\cs
 For example, to change the frame size of main contents, the class is called `wy-nav-content`. Change its `max-width` to 1000px
 
 Another example, to change the font size of of the left menu, the class is called `.wy-menu-vertical a`, change the font-size from 90% to 100%
+
+
+## Tools:
+
+mkdocs
+pdflatex
+mpx (mathpix)
+MikTex
