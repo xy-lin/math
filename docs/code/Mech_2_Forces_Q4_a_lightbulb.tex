@@ -1,0 +1,45 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}[scale=1.2]
+  % Internal drawing angle (for rendering only). Labels use alpha only.
+  \def\ang{25} % rendering helper
+  \def\L{3.0}
+
+  % ceiling point and bob coordinates (using internal angle)
+  \coordinate (O) at (0,0);
+  \coordinate (B) at ({\L*sin(\ang)},{-\L*cos(\ang)});
+
+  % ceiling
+  \draw[thick] (-0.6,0.15) -- (0.6,0.15);
+
+  % wire and bulb
+  \draw[thick] (O) -- (B);
+  \filldraw[fill=gray!20] (B) circle (0.18);
+  \node[above left=8pt] at (B) {lightbulb (mass $0.1\,$kg)};
+
+  % Tension along the wire (arrow pointing up along the wire)
+  \draw[->, very thick] ($(B)!0.28!(O)$) -- ($(B)!0.98!(O)$) node[midway,left=2pt] {$\mathbf{T}$};
+
+  % Weight downwards with label left
+  \draw[->, red, very thick] (B) -- ++(0,-1.0) node[midway,left=2pt] {$0.1g$};
+
+  % Applied horizontal force P (to the right) with label moved up
+  \draw[->, blue, very thick] (B) -- ++(1.2,0) node[midway,above=2pt] {$\mathbf{P}$};
+
+  % Angle marker between vertical and the wire, labelled with alpha
+  \draw[dashed] (O) -- ++(0,-0.9); % vertical reference
+  \draw (0,-0.45) arc (-90:-90+\ang:0.45);
+  \node[right] at ({0.45*cos(-90+\ang/2)},{-0.45+0.45*sin(-90+\ang/2)}) {$\alpha$};
+
+  % dashed projection lines to show components of T (visual)
+  \draw[dashed] (B) -- ++(1.0,0) coordinate (Hproj);
+  \draw[dashed] (B) -- ++(0,-1.0) coordinate (Vproj);
+
+  % component labels (in terms of alpha)
+  \node[below right] at (Hproj) {$T\sin\alpha$};
+  \node[below] at (Vproj) {$T\cos\alpha$};
+
+\end{tikzpicture}
+\end{document}
