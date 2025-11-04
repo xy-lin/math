@@ -34,7 +34,16 @@ Another example, to change the font size of of the left menu, the class is calle
 
 ## Tools:
 
+pandoc .\test-2.md -f markdown -t pptx -s -o test-2.pptx
+
 mkdocs
+
 pdflatex
+
 mpx (mathpix)
+
 MikTex
+
+VokoscreenNG
+
+Xournal

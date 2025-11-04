@@ -8,23 +8,31 @@
 
 1. A box is at rest on a rough horizontal floor. A horizontal force of 400 N acts on the box and the box is on the point of moving. The coefficient of friction between the box and the floor is 0.65 . Calculate the weight of the box.
 
-<br>
-
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
-<hr style="border:1px solid red" >
+Simply use the friction formula \( F = \mu R \) where \( F \) is the applied force, \( \mu \) is the coefficient of friction, and \( R \) is the normal reaction force (which equals the weight of the box in this case).
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+To find the weight of the box, we first need to determine the normal reaction force \( R \) between the box and the floor. The maximum frictional force \( F \) that can act on the box before it starts to move is given by:
+\[ F = \mu R \]
+where \( \mu \) is the coefficient of friction.
+Given that the box is on the point of moving, the applied force of 400 N is equal to the maximum frictional force:
+\[ 400 = 0.65 R \]
+Solving for \( R \):
+\[ R = \frac{400}{0.65} \approx 615.38 \text{ N} \]
+The normal reaction force \( R \) is equal to the weight \( W \) of the box, so:
+\[ W = R \approx 615.38 \text{ N} \]
+Therefore, the weight of the box is approximately \( 615.38 \text{ N} \).
+
+</div>
 
 +++
 
@@ -33,22 +41,504 @@
 2. In the system below, the coefficient of friction between the block and the table is 0.2 .
 ![](https://cdn.mathpix.com/cropped/2025_10_25_f05d4d9c1baeb4d61aacg-1.jpg?height=432&width=1131&top_left_y=608&top_left_x=391)
 Find the acceleration of the system and the tensions $T_{1}$ and $T_{2}$.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Firstly, we need to decide the direction of acceleration. Since 10kg is heavier than 2kg + 5kg, the system will accelerate such that the 10kg block moves downward, while the 2kg and 5kg blocks move to the right.
+
+Then the key is to use Newton's second law $F=ma$. We can consider three blocks separately or as a whole system. Analyses the forces acting on each block and set up equations accordingly
+Net force on 2kg box = T1 - weight of 2kg box = 2a
+Net force on 5kg box = T2 - T1 - frictional force = 5a
+Net force on 10kg box = weight of 10kg box - T2 = 10a
+
+We can solve these simultaneous equations to find the acceleration $a$ and tensions $T_1$ and $T_2$.
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q2.jpeg" alt="drawing" width="800"/>
+</p>
+
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Firstly, we need to decide the direction of acceleration. Since 10kg is heavier than 2kg + 5kg, the system will accelerate such that the 10kg block moves downward, while the 2kg and 5kg blocks move to the right.
+
+Then the key is to use Newton's second law $F=ma$. We can consider three blocks separately or as a whole system. Analyses the forces acting on each block and set up equations accordingly
+Net force on 2kg box = T1 - weight of 2kg box = 2a
+Net force on 5kg box = T2 - T1 - frictional force = 5a
+Net force on 10kg box = weight of 10kg box - T2 = 10a
+
+Friction force on 5kg block = coefficient of friction × normal reaction = 0.2 × 5g = 0.2 × 5 × 9.8 = 9.8 N
+
+We can solve these simultaneous equations to find the acceleration $a$ and tensions $T_1$ and $T_2$.
+
+$$
+\begin{align*}
+\text{For 2kg block:} & \quad T_1 - 2g = 2a \\
+\text{For 5kg block:} & \quad T_2 - T_1 - 0.2 \times 5g = 5a\\
+\text{For 10kg block:} & \quad 10g - T_2 = 10a
+\end{align*}
+$$
+
+If $g=9.8$, we can solve these equations to find:
+$$a \approx 4.04 \, \text{m/s}^2, \quad T_1 \approx 27.68 \, \text{N}, \quad T_2 \approx 57.6 \, \text{N}$$
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q2.jpeg" alt="drawing" width="800"/>
+</p>
+
+</div>
+
++++
+
+<br>
+
 3. A small object of mass 4 kg is placed on a plane inclined at $25^{\circ}$ to the horizontal. It is held in place by a light inextensible string that is parallel to the plane, passes over a smooth pulley and is attached to a sphere of mass $m \mathrm{~kg}$ which hangs freely as shown in the diagram.
 ![](https://cdn.mathpix.com/cropped/2025_10_25_f05d4d9c1baeb4d61aacg-1.jpg?height=235&width=926&top_left_y=1410&top_left_x=394)
 (a) Rishi models the system with the modelling assumption that the plane is smooth. Calculate the value of $m$ for the system to be in equilibrium.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the value of \( m \) for the system to be in equilibrium, we need to analyze the forces acting on both the object on the inclined plane and the hanging sphere.
+For the object on the inclined plane:
+- The weight of the object is \( W_1 = mg = 4g \)
+- The component of the weight acting down the plane is \( W_{1,\text{down}} = 4g \sin(25^\circ) \)
+- The tension in the string \( T \) acts up the plane.
+For the hanging sphere:
+- The weight of the sphere is \( W_2 = mg \)
+- The tension in the string \( T \) acts upward.
+For equilibrium, the forces must balance:
+1. For the object on the inclined plane:
+   \[ T = 4g \sin(25^\circ) \]
+2. For the hanging sphere:
+   \[ T = mg \]
+Setting the two expressions for \( T \) equal gives:
+\[ mg = 4g \sin(25^\circ) \]
+Solving for \( m \):
+\[ m = 4 \sin(25^\circ) \]
+Calculating \( \sin(25^\circ) \):
+\[ \sin(25^\circ) \approx 0.4226 \]
+Thus,
+\[ m \approx 4 \times 0.4226 \approx 1.69 \, \text{kg} \]
+
+
+</div>
+
++++
+
+<br>
+
+
 (b) Rishi finds that the system is in equilibrium when the mass of the sphere is 2.8 kg . He improves his model by modelling the plane as rough with coefficient of friction $\mu$ between the object and the plane. Find the range of values in which $\mu$ must lie. [5]
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q3.jpg" alt="drawing" width="800"/>
+</p>
+
+Need to decide the direction of frictional force first. Since the hanging mass is heavier than the previous case, the frictional force must act up the plane to prevent the object from sliding down.
+
+Then set up the equations of equilibrium considering friction:
+1. For the object on the inclined plane:
+   \[ T = 4g \sin(25^\circ) + F_f\]
+
+2. For the hanging sphere:
+   \[ T = 2.8g \]
+
+Then solve for \( \mu \) using the frictional force formula \( F_f = \mu R \), where \( R \) is the normal reaction force.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q3.jpg" alt="drawing" width="800"/>
+</p>
+
+To find the range of values for the coefficient of friction \( \mu \), we need to analyze the forces acting on the object on the inclined plane, considering friction.
+For the object on the inclined plane:
+- The weight of the object is \( W_1 = mg = 4g \)
+- The component of the weight acting down the plane is \( W_{1,\text{down}} = 4g \sin(25^\circ) \)
+- The normal reaction force \( R \) is given by \( R = 4g \cos(25^\circ) \)
+- The frictional force \( F_f \) acts up the plane and is given by \( F_f = \mu R = \mu (4g \cos(25^\circ)) \)
+- The tension in the string \( T \) acts up the plane.
+For the hanging sphere:
+- The weight of the sphere is \( W_2 = mg = 2.8g \)
+- The tension in the string \( T \) acts upward.
+For equilibrium, the forces must balance:
+1. For the object on the inclined plane:
+   \[ T = 4g \sin(25^\circ) + F_f\]
+2. For the hanging sphere:
+   \[ T = 2.8g \]
+Setting the two expressions for \( T \) equal gives:
+\[ 2.8g = 4g \sin(25^\circ) + \mu (4g \cos(25^\circ))\]
+Solving for \( \mu \):
+\[ \mu = \frac{2.8 - 4 \sin(25^\circ)}{4 \cos(25^\circ)} \]
+Calculating this gives:
+\[ \mu \approx \frac{2.8 - 1.6904}{3.6252} \approx \frac{1.1096}{3.6252} \approx 0.306 \]
+
+$\mu$ need to be at least this value to prevent the object from sliding up.
+Therefore, the range of values for \( \mu \) is:
+\[\mu \geq 0.306 \]
+
+</div>
+
++++
+
+<br>
+
 4. The diagram shows a mass of 50 kg on a slope which makes an angle of $30^{\circ}$ with the horizontal. The coefficient of friction between the mass and the slope is 0.25 . You may assume that the mass does not tip up.
 ![](https://cdn.mathpix.com/cropped/2025_10_25_f05d4d9c1baeb4d61aacg-1.jpg?height=335&width=472&top_left_y=2227&top_left_x=491)
 Find the magnitude of the force $T$ if
 (a) the mass is about to move down the slope
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+When the mass is about to move down the slope, the frictional force acts up the slope. Also the Reaction force need to consider the component of T perpendicular to the slope.
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q4_a.jpg" alt="drawing" width="800"/>
+</p>
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q4_a.jpg" alt="drawing" width="800"/>
+</p>
+
+To find the magnitude of the force \( T \) in both scenarios, we need to analyze the forces acting on the mass on the slope.
+First, we calculate the weight of the mass:
+\[ W = mg = 50 \times 9.8 = 490 \, \text{N} \]
+Next, we resolve the weight into components parallel and perpendicular to the slope:
+- The component of the weight acting down the slope is:
+  \[ W_{\text{down}} = W \sin(30^\circ) = 490 \times 0.5 = 245 \, \text{N} \]
+- The normal reaction force \( R \) is:
+  \[ R = W \cos(30^\circ) - T \sin{20^\circ} = 490 \times \frac{\sqrt{3}}{2} - T \sin{20^\circ} \text{N} \]
+The maximum frictional force \( F_f \) that can act on the mass is given by:
+\[ F_f = \mu R = 0.25 \times (490 \times \frac{\sqrt{3}}{2} - T \sin{20^\circ}) \text{N} \]
+
+the component of T alone the slope is:
+\[T^{'}=T \cos(20^\circ)\]
+
+When the mass is about to move down the slope, the frictional force acts up the slope, and the equation of motion along the slope is:
+
+\[ T^{'} + F_f = W_{\text{down}}\]
+
+Substituting the values we have:
+\[ T \cos(20^\circ) + 0.25 \times (490 \times \frac{\sqrt{3}}{2} - T \sin{20^\circ}) = 245 \]
+Solving for \( T \):
+\[ T \cos(20^\circ) - 0.25 T \sin(20^\circ) = 245 - 0.25 \times 490 \times \frac{\sqrt{3}}{2} \]
+Calculating the right side:
+\[ 245 - 0.25 \times 490 \times \frac{\sqrt{3}}{2} \approx 245 - 106.07 \approx 138.93 \]
+Now, solving for \( T \):
+\[ T (\cos(20^\circ) - 0.25 \sin(20^\circ)) = 138.93 \]
+Calculating the left side coefficient:
+\[ \cos(20^\circ) - 0.25 \sin(20^\circ) \approx 0.9397 - 0.25 \times 0.3420 \approx 0.9397 - 0.0855 \approx 0.8542 \]
+Thus,
+\[ T \approx \frac{138.93}{0.8542} \approx 162.6 \, \text{N} \]
+
+
+</div>
+
++++
+
+<br>
+
 (b) the mass is accelerating at $5 \mathrm{~ms}^{-2}$ up the slope.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q4_b.jpg" alt="drawing" width="800"/>
+</p>
+
+Same as part (a), but now consider the acceleration up the slope. The frictional force will act down the slope in this case.
+The Reaction force need to consider the component of T perpendicular to the slope.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q4_b.jpg" alt="drawing" width="800"/>
+</p>
+
+To find the magnitude of the force \( T \) when the mass is accelerating up the slope at \( 5 \, \text{m/s}^2 \), we need to consider the forces acting on the mass along the slope.
+The box is moving up the slope, so the frictional force acts down the slope.
+the component of T alone the slope is:
+\[T^{'}=T cos(20^\circ)\]
+The net force \( F_{\text{net}} \) acting on the mass along the slope is given by Newton's second law:
+\[ F_{\text{net}} = ma = 50 \times 5 = 250 \, \text{N} \]
+The equation of motion along the slope is:
+\[ T^{'} - F_f - W_{\text{down}} = F_{\text{net}} \]
+Substituting the known values:
+\[ T^{'} - 0.25 \times (W \cos(30^\circ) - T \sin{20^\circ}) - 245 = 250 \]
+Solving for \( T \):
+\[ T \cos(20^\circ) - 0.25 \times (490 \times \frac{\sqrt{3}}{2} - T \sin{20^\circ}) = 250 + 245 \]
+Now, solving for \( T \):
+\[ T \cos(20^\circ) + 0.25 T \sin(20^\circ) = 495 + 0.25 \times 490 \times \frac{\sqrt{3}}{2} \]
+Calculating the right side:
+\[ 495 + 0.25 \times 490 \times \frac{\sqrt{3}}{2} \approx 495 + 106.07 \approx 601.07 \]
+Calculating the left side coefficient:
+\[ \cos(20^\circ) + 0.25 \sin(20^\circ) \approx 0.9397 + 0.25 \times 0.3420 \approx 0.9397 + 0.0855 \approx 1.0252 \]
+Thus,
+\[ T \approx \frac{601.07}{1.0252} \approx 586.5 \, \text{N} \]
+
+
+</div>
+
++++
+
+<br>
+
 5. George pulls a crate of mass $M \mathrm{~kg}$ across a rough horizontal floor using a light inextensigle string which makes an angle $\theta$ to the horizontal. The coefficient of fricton between the floor and the box is $\mu$. The acceleration of the box across the floor is $a \mathrm{~ms}^{-2}$. George models the situation assuming that there are no other resistive forces.
 (a) Show that $T$, the tension in the string is given by $T=\frac{M(a+\mu g)}{(\cos \theta+\mu \sin \theta)}$.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Similar to previous questions, when calculating the friction force, we need to include the vertical component of the tension when calculating the normal reaction force.
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q5.jpg" alt="drawing" width="800"/>
+</p>
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q5.jpg" alt="drawing" width="800"/>
+</p>
+
+To derive the expression for the tension \( T \) in the string, we need to analyze the forces acting on the crate both horizontally and vertically.
+1. **Vertical Forces:**
+- The weight of the crate acts downward: \( W = Mg \)
+- The vertical component of the tension in the string acts upward: \( T \sin \theta \)
+- The normal reaction force \( R \) from the floor acts upward.
+The equation for vertical forces is:
+\[ R + T \sin \theta = Mg \]
+Solving for \( R \):
+\[ R = Mg - T \sin \theta \]
+2. **Horizontal Forces:**
+- The horizontal component of the tension in the string acts to the right: \( T \cos \theta \)
+- The frictional force \( F_f \) acts to the left and is given by \( F_f = \mu R \)
+The equation for horizontal forces is:
+\[ T \cos \theta - F_f = Ma \]
+Substituting \( F_f \) with \( \mu R \):
+\[ T \cos \theta - \mu (Mg - T \sin \theta) = Ma \]
+Expanding and rearranging gives:
+\[ T \cos \theta - \mu Mg + \mu T \sin \theta = Ma \]
+Combining the terms with \( T \):
+\[ T (\cos \theta + \mu \sin \theta) = Ma + \mu Mg \]
+Solving for \( T \):
+\[ T = \frac{Ma + \mu Mg}{\cos \theta + \mu \sin \theta} \]
+Factoring out \( M \):
+\[ T = \frac{M(a + \mu g)}{\cos \theta + \mu \sin \theta} \]
+
+
+
+</div>
+
++++
+
+<br>
+
+
 (b) George knows that when $M=40, \theta=20$ and $T=220$, the box is on the point of moving. Use the expression from part (a) to calculate a value of $\mu$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+When box is about to move, the frictional force is at its maximum value and the acceleration is zero.
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q5.jpg" alt="drawing" width="800"/>
+</p>
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q5.jpg" alt="drawing" width="800"/>
+</p>
+
+When box is about to move, the frictional force is at its maximum value and the acceleration is zero. Therefore, we can set \( a = 0 \) in the expression for \( T \) derived in part (a):
+\[ T = \frac{M(\mu g)}{\cos \theta + \mu \sin \theta} \]
+Substituting the known values \( M = 40 \, \text{kg} \), \( \theta = 20^\circ \), \( T = 220 \, \text{N} \), and \( g = 9.8 \, \text{m/s}^2 \):
+\[ 220 = \frac{40(\mu \times 9.8)}{\cos 20^\circ + \mu \sin 20^\circ} \]
+Rearranging to solve for \( \mu \):
+\[ 220 (\cos 20^\circ + \mu \sin 20^\circ) = 40 \mu \times 9.8 \]
+Expanding the left side:
+\[ 220 \cos 20^\circ + 220 \mu \sin 20^\circ = 392 \mu \]
+Rearranging gives:
+\[ 220 \cos 20^\circ = 392 \mu - 220 \mu \sin 20^\circ \]
+\[ 220 \cos 20^\circ = \mu (392 - 220 \sin 20^\circ) \]
+Solving for \( \mu \):
+\[ \mu = \frac{220 \cos 20^\circ}{392 - 220 \sin 20^\circ} \]
+Calculating the values:
+\[ \mu \approx \frac{220 \times 0.9397}{392 - 220 \times 0.3420} \approx \frac{206.734}{392 - 75.24} \approx \frac{206.734}{316.76} \approx 0.652 \]
+
+</div>
+
++++
+
+<br>
+
 6. Two small blocks of mass 0.8 kg and 1.2 kg are attached with a light inextensible rod which is parallel to the bases of the blocks. The blocks are placed on a plane inclined at $30^{\circ}$ to the horizontal with the 1.2 kg block higher than the 0.8 kg block. The coefficient of friction between the 0.8 kg mass and the plane is 0.5 and that between the 1.2 kg mass and the plane is 0.3 .
 ![](https://cdn.mathpix.com/cropped/2025_10_25_f05d4d9c1baeb4d61aacg-2.jpg?height=233&width=861&top_left_y=1267&top_left_x=502)
 (a) Determine the acceleration of the system.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Try to work out the frictional forces and downward forces acting on both blocks. The net force on the system will be the difference between the total downward forces and the total frictional forces. Then use Newton's second law to find the acceleration of the system.
+Heavier box is higher, so the system will accelerate down the slope.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q6.jpg" alt="drawing" width="800"/>
+</p>
+
+To determine the acceleration of the system, we first need to calculate the forces acting on both blocks.
+1. **For the 0.8 kg block:**
+- Weight: \( W_2 = 0.8 \times 9.8 = 7.84 \, \text{N} \)
+- Component of weight down the slope:
+  \[ W_{2,\text{down}} = 7.84 \sin(30^\circ) = 7.84 \times 0.5 = 3.92 \, \text{N} \]
+- Normal reaction force:
+  \[ R_2 = 7.84 \cos(30^\circ) = 7.84 \times \frac{\sqrt{3}}{2} \approx 6.79 \, \text{N} \]
+- Frictional force:
+  \[ F_{f2} = \mu_2 R_2 = 0.5 \times 6.79 \approx 3.395 \, \text{N} \]
+2. **For the 1.2 kg block:**
+- Weight: \( W_1 = 1.2 \times 9.8 = 11.76 \, \text{N} \)
+- Component of weight down the slope:
+  \[ W_{1,\text{down}} = 11.76 \sin(30^\circ) = 11.76 \times 0.5 = 5.88 \, \text{N} \]
+- Normal reaction force:
+  \[ R_1 = 11.76 \cos(30^\circ) = 11.76 \times \frac{\sqrt{3}}{2} \approx 10.18 \, \text{N} \]
+- Frictional force:
+  \[ F_{f1} = \mu_1 R_1 = 0.3 \times 10.18 \approx 3.054 \, \text{N} \]
+3. **Net Force on the System:**
+- Total downward force:
+  \[ F_{\text{down}} = W_{2,\text{down}} + W_{1,\text{down}} = 3.92 + 5.88 = 9.8 \, \text{N} \]
+- Total frictional force:
+  \[ F_{\text{friction}} = F_{f2} + F_{f1} = 3.395 + 3.054 \approx 6.449 \, \text{N} \]
+- Net force:
+   \[ F_{\text{net}} = F_{\text{down}} - F_{\text{friction}} = 9.8 - 6.449 \approx 3.351 \, \text{N} \]
+4. **Acceleration of the System:**
+- Total mass of the system:
+   \[ M_{\text{total}} = 0.8 + 1.2 = 2.0 \, \text{kg} \]
+- Using Newton's second law:
+   \[ a = \frac{F_{\text{net}}}{M_{\text{total}}} = \frac{3.351}{2.0} \approx 1.6755 \, \text{m/s}^2 \]
+
+</div>
+
++++
+
+<br>
+
 (b) Determine the magnitude of the force in the rod making clear whether it is in tension or compression.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Since 1.2g box is heavier, the rod will be in thrust (compression). Consider the forces acting on either block and use Newton's second law to find the force in the rod.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech2_Friction_Q6.jpg" alt="drawing" width="800"/>
+</p>
+
+To determine the magnitude of the force in the rod, we can analyze the forces acting on either block. Let's consider the 0.8 kg block.
+1. **For the 0.8 kg block:**
+- Weight component down the slope:
+\[ W_{2,\text{down}} = 3.92 \, \text{N} \]
+- Frictional force:
+\[ F_{f2} = 3.395 \, \text{N} \]
+- Acceleration of the block:
+\[ a \approx 1.6755 \, \text{m/s}^2 \]
+Using Newton's second law for the 0.8 kg block:
+\[ F_{\text{net}} = ma \]
+\[ F_{\text{net}} = 0.8 \times 1.6755 \approx 1.3404 \, \text{N} \]
+
+The force on Rod is compression (thrust), so we have: 
+\[ W_{2,\text{down}} + T_{\text{rod}} - F_{f2} = F_{\text{net}} \]
+
+Substituting the known values:
+\[ 3.92 + T_{\text{rod}} - 3.395 = 1.3404 \]
+Solving for \( T_{\text{rod}} \):
+\[ T_{\text{rod}} = 1.3404 - 3.92 + 3.395 \approx 0.8154 \, \text{N} \]
+
+</div>
+
++++
+
+<br>
 
 <br>
 
