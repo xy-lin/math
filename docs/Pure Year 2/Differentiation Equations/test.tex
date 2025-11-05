@@ -10,19 +10,17 @@
 
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 Solve by "separating variables" method: arrange the equation so that all terms involving $y$ are on one side and all terms involving $x$ are on the other side, then integrate both sides.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 \frac{\mathrm{d}y}{\mathrm{d}x}=x(y-1)
@@ -34,7 +32,6 @@ $$
 \frac{\mathrm{d}y}{y-1}=x\,\mathrm{d}x
 $$
 
-
 Integrate both sides:
 
 $$
@@ -42,7 +39,6 @@ $$
 \quad\Rightarrow\quad
 \ln\lvert y-1\rvert=\frac{x^2}{2}+C,
 $$
-
 
 Exponentiate and solve for $y$:
 
@@ -54,7 +50,7 @@ $$
 
 where $C$ is an arbitrary constant.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
@@ -64,7 +60,7 @@ where $C$ is an arbitrary constant.
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 (x-1)\frac{\mathrm{d}y}{\mathrm{d}x}=xy,\qquad x>1,\ y>0
@@ -103,23 +99,20 @@ $$
 y=\frac{x-1}{2}e^{\,x-3}
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 3. Obtain a particular solution to $\left(1-\mathrm{e}^{2 y}\right) \frac{\mathrm{d} y}{\mathrm{~d} x}=\mathrm{e}^{y}$ given that $y=0$ when $x=2$.
 (There is no need to express $y$ in terms of $x$ ).
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 (1-e^{2y})\frac{\mathrm{d}y}{\mathrm{d}x}=e^{y}
 $$
-
 
 Separate variables:
 
@@ -129,7 +122,6 @@ $$
 (e^{-y}-e^{y})\,\mathrm{d}y=\mathrm{d}x
 $$
 
-
 Integrate both sides:
 
 $$
@@ -138,13 +130,11 @@ $$
 - e^{-y}-e^{y}+C=x.
 $$
 
-
 Use the condition $y=0,\;x=2$:
 
 $$
 2=-e^{0}-e^{0}+C=-1-1+C\quad\Rightarrow\quad C=4.
 $$
-
 
 Thus a particular (implicit) solution is
 
@@ -154,7 +144,7 @@ $$
 
 or equivalently $\;e^{y}+e^{-y}=4-x$.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
@@ -164,7 +154,7 @@ or equivalently $\;e^{y}+e^{-y}=4-x$.
 
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 Try to find a way to separate the variables $x$ and $y$. One way is to rearrange the equation to isolate $\frac{\mathrm{d}y}{\mathrm{d}x}$, then rewrite it in differential form to separate the variables:
 $$
@@ -172,21 +162,17 @@ $$
 \quad\Longrightarrow\quad y^{-2}\,\mathrm{d}y=x^{-2}\,\mathrm{d}x
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 x^{2}\frac{\mathrm{d}y}{\mathrm{d}x}-y^{2}=0,\qquad x\neq0
 $$
-
-
 
 $$
 \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{y^{2}}{x^{2}}
@@ -194,15 +180,11 @@ $$
 y^{-2}\,\mathrm{d}y=x^{-2}\,\mathrm{d}x
 $$
 
-
-
 $$
 \int y^{-2}\,\mathrm{d}y=\int x^{-2}\,\mathrm{d}x
 \quad\Rightarrow\quad
 -\frac{1}{y}=-\frac{1}{x}+C
 $$
-
-
 
 $$
 \frac{1}{y}=\frac{1}{x}+C_1
@@ -210,20 +192,18 @@ $$
 y=\frac{1}{\dfrac{1}{x}+C_1}=\frac{x}{1+C_1 x},
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
 <br>
 
 5. At time $t$ seconds the rate of increase in the concentration of flesh eating bugs in a controlled environment is proportional to the concentration $C$ of bugs present. Initially $C=100$ bugs and after 2 seconds there are five times as many.
-
 (a) Write down a differential equation connecting $\frac{\mathrm{d} C}{\mathrm{~d} t}, C$ and $t$ and hence find an expression for $C$ in terms of $t$.
-
 
 +++ <span style="color:blue">Hint</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 Since the rate of increase is proportional to the concentration:
 
@@ -233,15 +213,13 @@ $$
 
 where $k$ is a constant. Solve by separating variables method. Then use the initial conditions to find the constants.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
-<br>
-
 +++ <span style="color:green">Solution</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 Since the rate of increase is proportional to the concentration:
 
@@ -292,17 +270,15 @@ $$
 ( \text{Note that: } e^{\ln{5^\frac{1}{2}}} = 5^\frac{1}{2} )
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 (b) How many bugs are present after 5 seconds?
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 C(t)=100\cdot 5^{t/2}
@@ -312,61 +288,49 @@ $$
 C(5)=100\cdot 5^{5/2}=100\cdot 25\sqrt{5}=2500\sqrt{5}\approx 5590.17
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 \((c)\) When will the number of bugs exceed 5000 ?
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 We have $C(t)=100\cdot 5^{t/2}$. We want the time $t$ when $C(t)>5000$.
-
 
 $$
 100\cdot 5^{t/2}>5000
 $$
 
-
-
 $$
 5^{t/2}>50
 $$
 
-
 Taking logarithms (or using base‑5 logs),
-
 
 $$
 \frac{t}{2}>\log_{5}50 \quad\Longrightarrow\quad t>2\log_{5}50.
 $$
 
-
 Equivalently (natural logs),
-
 
 $$
 t>\frac{2\ln 50}{\ln 5}\approx 4.86135\ \text{seconds}.
 $$
 
-
 So the number of bugs exceeds 5000 after approximately $4.86$ seconds.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 (d) Find the time at which the concentration of bugs has increased by $50 \%$ of the initial concentration.
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 We have $C(t)=100\cdot 5^{t/2}$. We want the time $t$ such that the concentration has increased by $50\%$ of the initial value, i.e. $C(t)=150$.
 
@@ -389,7 +353,7 @@ $$
 t=\frac{2\ln(3/2)}{\ln 5}\approx 0.5033\ \text{seconds}
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
@@ -402,22 +366,19 @@ $$
 $$
 (a) Solve the differential equation to find $x$ in terms of $t$.
 
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 \frac{dx}{dt} = -\frac{50}{\pi} x^{-3/2}
 $$
-
 
 Separate variables:
 
 $$
 x^{3/2}\,dx = -\frac{50}{\pi}\,dt
 $$
-
 
 Integrate:
 
@@ -427,13 +388,11 @@ $$
 \frac{2}{5}x^{5/2} = -\frac{50}{\pi}t + C
 $$
 
-
 Multiply both sides by $\tfrac{5}{2}$:
 
 $$
 x^{5/2} = -\frac{125}{\pi}t + C_1
 $$
-
 
 Using the initial condition $x(0)=25$ gives $C_1 = 25^{5/2}=3125$. Hence
 
@@ -441,13 +400,11 @@ $$
 x^{5/2} = 3125 - \frac{125}{\pi}t
 $$
 
-
 Therefore
 
 $$
 x(t)=\left(3125-\frac{125}{\pi}t\right)^{2/5}
 $$
-
 
 The container empties when
 
@@ -455,7 +412,7 @@ $$
 3125-\frac{125}{\pi}t=0 \quad\Longrightarrow\quad t=25\pi
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
@@ -463,10 +420,9 @@ $$
 
 (b) How long does it take for the container to empty completely?
 
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 x^{5/2}=3125-\frac{125}{\pi}t
@@ -481,14 +437,13 @@ $$
 t=\frac{3125\pi}{125}=25\pi
 $$
 
-
 Numerically,
 
 $$
 t=25\pi\approx 78.54\ \text{seconds}.
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
 
@@ -500,7 +455,7 @@ A cup of tea is in a room. The ambient temperature of the room is $20^{\circ} \m
 
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 $$
 \text{The cooling model is (Newton's law of cooling):}\qquad \frac{dT}{dt} = -k\bigl(T-20\bigr)
@@ -536,12 +491,10 @@ $$
 52 = 20 + 64e^{-5k} \quad\Longrightarrow\quad 32 = 64e^{-5k}
 $$
 
-
 $$
 e^{-5k}=\tfrac{1}{2}\quad\Longrightarrow\quad -5k=\ln\!\tfrac{1}{2}=-\ln 2
 \quad\Longrightarrow\quad k=\frac{\ln 2}{5}.
 $$
-
 
 Find $t$ when $T(t)=21$:
 
@@ -549,11 +502,9 @@ $$
 21 = 20 + 64e^{-kt}\quad\Longrightarrow\quad 1 = 64e^{-kt}
 $$
 
-
 $$
 e^{-kt}=\tfrac{1}{64} = 2^{-6}\quad\Longrightarrow\quad -kt=-6\ln 2
 $$
-
 
 $$
 t=\frac{6\ln 2}{k} = \frac{6\ln 2}{(\ln 2)/5}=6\cdot 5 = 30\ \text{minutes}.
@@ -563,26 +514,21 @@ $$
 t=30\ \text{minutes}
 $$
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 (b) Suggest one limitation of this model.
 
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px;">
 
 It requires that the ambient temperature remains constant. In reality, the ambient temperature may vary over time.
 
-<hr style="border:1px solid red" >
+</div>
 
 +++
-
-<br>
 
 <br>
 
