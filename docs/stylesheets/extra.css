@@ -1,6 +1,6 @@
-/* .md-content__inner{
-    width:1200px;
-} */
+.md-content__inner{
+    width:1000px;
+}
 
 /* #preview {
     width:1200px;
@@ -8,7 +8,14 @@
     margin: 1px;
 }
 
-.scrollEditor {
+#preview-content {
+    width:1200px;
     max-width:1200px;
     margin: 1px;
 } */
+
+
+#preview.preview.scrollEditor {
+    max-width:1200px;
+    margin: 1px;
+} 
