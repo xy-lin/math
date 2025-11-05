@@ -748,7 +748,7 @@ foreignObject[data-mjx-xml] {
     <div id="container-ruller" />
     <div id="preview-content">
       <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/dune1.avif" alt="drawing" width="500"/>
 </p>
 <div style="font-size: 22px;">
 <div><br><br></div>
@@ -819,7 +819,7 @@ Find the velocity of the particle at time <span class="math-inline ">
 <br></div>
 </div>
 <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/dune2.jpg" alt="drawing" width="500"/>
 </p>
 
     </div>
