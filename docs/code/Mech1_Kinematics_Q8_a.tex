@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    width=12cm, height=6cm,
+    xmin=0, xmax=80, ymin=0, ymax=35,
+    xlabel={$t$ (s)}, ylabel={$v$ (m\,s^{-1})},
+    xtick={0,10,30,40,80}, ytick={0,15,25,30,35},
+    grid=both, grid style={line width=.1pt, draw=gray!30},
+    major grid style={line width=.2pt, draw=gray!50},
+    axis lines=left,
+    legend pos=north west,
+  ]
+
+    % Car A: accelerate 0-10s (3 m/s^2) then constant 30 m/s
+    \addplot[blue, very thick] coordinates {(0,0) (10,30)};
+    \addplot[blue, very thick] coordinates {(10,30) (80,30)};
+    \addlegendentry{Car A}
+
+    % Car B: constant 15 m/s for 0-30s, accelerate 1 m/s^2 from 30-40s, then 25 m/s
+    \addplot[red, very thick] coordinates {(0,15) (30,15)};
+    \addplot[red, very thick, domain=30:40, samples=2] {15 + (x-30)}; % linear from 15 to 25
+    \addplot[red, very thick] coordinates {(40,25) (80,25)};
+    \addlegendentry{Car B}
+
+    % Mark key points and dashed guidelines
+    \addplot[black, only marks, mark=*] coordinates {(10,30) (30,15) (40,25)};
+    \node[anchor=south] at (axis cs:10,30) {$(10,30)$};
+    \node[anchor=north] at (axis cs:30,15) {$(30,15)$};
+    \node[anchor=south] at (axis cs:40,25) {$(40,25)$};
+
+    \draw[dashed,gray] (axis cs:10,0) -- (axis cs:10,30);
+    \draw[dashed,gray] (axis cs:30,0) -- (axis cs:30,15);
+    \draw[dashed,gray] (axis cs:40,0) -- (axis cs:40,25);
+
+  \end{axis}
+\end{tikzpicture}
+\end{document}

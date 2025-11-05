@@ -7,12 +7,134 @@
 <br><br>
 
 Use $g=9.8 m s^{-2}$ unless stated otherwise.
+
 1. A particle traveling in a straight line at $15 \mathrm{~ms}^{-1}$ is brought to rest by a constant deceleration in a distance of 22.5 m . Find the time taken for the particle to come to rest.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Just use the SUVAT equation that does not involve time to find the acceleration first, then use that to find the time.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the SUVAT equation \(v^{2}=u^{2}+2 a s\) we have
+\(0=15^{2}+2 a \times 22.5 \Rightarrow a=-5 \mathrm{~ms}^{-2}\)
+Using \(v=u+a t\) we have 
+\(0=15-5 t \Rightarrow t=3 s\)
+
+</div>
+
++++
+
+<br>
+
+
 2. A plant pot falls from a balcony. It hits the ground after 2.24 seconds.
 (a) By modelling the plant pot as a particle, find the height of the balcony from the ground.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use the SUVAT equation that does not involve final velocity to find the height.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the SUVAT equation \(s=u t+\frac{1}{2} a t^{2}\) we have
+\(s=0 \times 2.24+\frac{1}{2} \times 9.8 \times(2.24)^{2}=24.5 m\)
+
+</div>
+
++++
+
+<br>
+
 (b) State one further assumption used to model this situation.
+
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Assume that air resistance is negligible.
+
+</div>
+
++++
+
+<br>
+
 3. A particle accelerates uniformly from $7 \mathrm{~ms}^{-1}$ to $21 \mathrm{~ms}^{-1}$ in 8 s . How far does it travel in this time?
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use the SUVAT equation that involves initial velocity, time and acceleration to find the distance. Find the acceleration first using the equation that involves initial velocity, final velocity and time.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the SUVAT equation \(v=u+a t\) we have
+\(21=7+8 a \Rightarrow a=1.75 \mathrm{~ms}^{-2}\)
+Using \(s=u t+\frac{1}{2} a t^{2}\) we have
+\(s=7 \times 8+\frac{1}{2} \times 1.75 \times 8^{2}=112 m\)
+
+</div>
+
++++
+
+<br>
+
 4. A particle is projected at a speed of $12 \mathrm{~ms}^{-1}$ up a straight inclined track. Whilst on the track the particle experiences a constant acceleration down the track of $5 \mathrm{~ms}^{-2}$. Find the length of time that the displacement of the particle up the track from the point of projection is greater than 8 metres.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Again use the SUVAT equations. Find the time taken to reach 8 metres by rearranging the equation to form a quadratic equation.
+There will be two solutions, find the difference between them to get the time spent above 8 metres.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Using the SUVAT equation \(s=u t+\frac{1}{2} a t^{2}\) we have
+\(8=12 t-\frac{1}{2} \times 5 t^{2} \Rightarrow 5 t^{2}-24 t+16=0\)
+Solving this quadratic equation gives \(t=4 s\) or \(t=0.8 s\)
+The displacement of the particle up the track from the point of projection is greater than 8 metres for \(4-0.8=3.2 s\)
+
+</div>
+
++++
+
+<br>
+
 5. A train passes through station A tramelling at $10 \mathrm{~ms}^{-1}$ along a straight track.
 
 For the first 5 seconds after leaving the station the train has a constant acceleration of $7 \mathrm{~ms}^{-2}$.
@@ -20,24 +142,343 @@ For the first 5 seconds after leaving the station the train has a constant accel
 The train then travels with constant velocity for a time, T , until it decelerates uniformly for 15 seconds, coming to rest at the station $B$ which is 2.68 km away from $A$.
 
 Sketch a velocity time graph for the motion of the train and calculate the time taken to get between the two stations.
-6. A particle travels in a straight line.
 
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+There are three phases to the motion: acceleration, constant velocity and deceleration.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech1_Kinematic_Q5.jpg" alt="drawing" width="500"/>
+</p>
+
+Phase 1 (0 → 5 s): initial speed $u=10 ms^{-1}, a=7 ms^{−2}, t_1=5 s$
+
+$$
+v_1 = u + a t_1 = 10 + 7\times5 = 45\ \mathrm{ms^{-1}},
+$$
+$$
+s_1 = ut_1 + \tfrac{1}{2}at_1^2 = 10\times5 + \tfrac{1}{2}\times7\times5^2 = 137.5\ \mathrm{m}.
+$$
+
+Phase 2 (constant velocity): speed $v_1=45 ms^{−1}$ for time $T$,
+$$
+s_2 = 45T.
+$$
+
+Phase 3 (braking for 15 s to rest): 
+initial speed $45 ms^{−1}, \text{final speed} = 0, t_3=15 s$
+$$
+s_3 = \tfrac{1}{2}(45+0)\times15 = 337.5\ \mathrm{m}.
+$$
+
+Total displacement:
+$$
+s_1 + s_2 + s_3 = 2680
+$$
+so
+$$
+137.5 + 45T + 337.5 = 2680.
+$$
+Hence
+$$
+45T = 2680 - 475 = 2205 \quad\Rightarrow\quad T = \frac{2205}{45} = 49\ \mathrm{s}.
+$$
+
+Total time:
+$$
+t_1 + T + t_3 = 5+49+15=69 \mathrm{s}.
+$$
+
+Answer: 69 s.
+
+</div>
+
++++
+
+<br>
+
+
+6. A particle travels in a straight line.
 The motion is modelled by the $v$ - $t$ diagram below.
 ![](https://cdn.mathpix.com/cropped/2025_10_25_2b1401b6ed12b43ff6ecg-1.jpg?height=480&width=1152&top_left_y=1936&top_left_x=319)
 (a) Calculate the acceleration of the particle in the part of the motion from $t=1$ to $t=4$.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+The acceleration over that interval is the slope of the v–t graph.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+The acceleration is given by the gradient of the $v$ - $t$ graph.
+From $t=1$ to $t=4$, the change in velocity is $20-10=10 \mathrm{~ms}^{-1}$ and the change in time is $4-1=3 \mathrm{~s}$.
+Therefore, the acceleration is \(\frac{10}{3} \approx 3.33 \mathrm{~ms}^{-2}\).
+
+</div>
+
++++
+
+<br>
+
 (b) Calculate the displacement of the particle from its position when $t=0$ to its position when $t=7$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+There are three sections above the time axis and one section below it. To calculate displacement, calculate the area of each section and add them up, then subtract the area below the time axis.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+\begin{align*}
+s_{0\to1} &= \frac{v(0)+v(1)}{2}(1-0)=\frac{0+10}{2}\times1=5\ \mathrm{m},\\
+s_{1\to4} &= \frac{v(1)+v(4)}{2}(4-1)=\frac{10+20}{2}\times3=45\ \mathrm{m},\\
+s_{4\to6} &= \frac{v(4)+v(6)}{2}(6-4)=\frac{20+0}{2}\times2=20\ \mathrm{m},\\
+s_{6\to7} &= \frac{v(6)+v(7)}{2}(7-6)=\frac{0+(-10)}{2}\times1=-5\ \mathrm{m}.\\
+\text{Total displacement} &= s_{0\to1} + s_{1\to4} + s_{4\to6} + s_{6\to7} = 5 + 45 + 20 - 5 = 65\ \mathrm{m}.
+\end{align*}
+
+</div>
+
++++
+
+<br>
+
 7. A ball A is thrown vertically upwards at $25 \mathrm{~ms}^{-1}$ from a point P . Three seconds later a second ball $B$ is also thrown vertically upwards from the point $P$ at $25 \mathrm{~ms}^{-1}$. Taking the acceleration due to gravity to be $10 \mathrm{~ms}^{-2}$, calculate
 (a) the time for which ball A has been in motion when the balls meet
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Let the time after ball A is thrown when they meet be \(t\) seconds. \(t\) need to be greater than 3 seconds since ball B is thrown 3 seconds later.
+
+The displacements of ball A and ball B are same.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+\begin{align*}
+y_A &= 25t - \tfrac{1}{2}gt^2 = 25t - 5t^2,\qquad t\ge 3,\\
+y_B &= 25(t-3) - \tfrac{1}{2}g(t-3)^2 = 25(t-3) - 5(t-3)^2.
+\end{align*}
+
+Setting $y_A=y_B$:
+\begin{align*}
+25t-5t^2 &= 25(t-3)-5(t-3)^2\\
+25t-5t^2 &= 25t-75 -5(t^2-6t+9)\\
+25t-5t^2 &= -5t^2 +55t -120\\
+25t &= 55t -120\\
+-30t &= -120\\
+t &= 4\ \text{s}.
+\end{align*}
+
+Hence ball A has been in motion for $4$ s when the balls meet.
+
+</div>
+
++++
+
+<br>
+
 (b) the height above P at which A and B meet.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Use either displacement equation for ball A or ball B to find the height when they meet. 
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Considering ball A, the displacement when they meet is:
+\begin{align*}
+t_{\text{A}} &= 4\ \mathrm{s},\\
+y_{\text{A}} &= 25t - \tfrac{1}{2}gt^2
+= 25\cdot 4 - 5\cdot 4^2
+= 100 - 80
+= 20\ \mathrm{m}.
+\end{align*}
+
+</div>
+
++++
+
+<br>
+
+
+
 8. Cars A and B are traveling in the same direction along a straight road. The time $t$ is in seconds.
-
 At $t=0$, car A is at rest. It accelerates at $3 \mathrm{~ms}^{-2}$ for $0 \leq t \leq 10$ and then travels at a constant speed.
-
 Car B travels at $15 \mathrm{~ms}^{-1}$ for $0 \leq t \leq 30$ and then accelerates at $1 \mathrm{~ms}^{-2}$ until it reaches a speed of $25 \mathrm{~ms}^{-1}$, after which it continues at this constant speed.
 (a) Draw $v$ - $t$ diagrams for the motion of car A and of car B , where $v$ is the speed in $\mathrm{ms}^{-1}$ and $0 \leq t \leq 80$.
-(b) Show that, in the first 40 seconds, car A travels 400 m further than car B.
-\((c)\) Given that car A is 500 m behind car B at $t=0$, at what value of $t$ does car A catch up with car B ?
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech1_Kinematic_Q8_a.jpg.png" alt="drawing" width="500"/>
+</p>
+
+</div>
+
++++
+
 <br>
+
+
+(b) Show that, in the first 40 seconds, car A travels 400 m further than car B.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Calculate the displacements of each car in the first 40 seconds using the area under the v–t graphs.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+For car A (accelerates at $3\ \mathrm{m\,s^{-2}}$) for $0\le t\le 10$; then constant speed $30\ \mathrm{m\,s^{-1}}$ for $10\le t\le 40$):
+
+\begin{align*}
+s_{A1} &= \tfrac{1}{2} a t^2=\tfrac{1}{2}\cdot 3\cdot 10^2=150\ \mathrm{m}\\
+s_{A2} &= v\Delta t=30\cdot(40-10)=30\cdot 30=900\ \mathrm{m}\\
+s_A &= s_{A1}+s_{A2}=150+900=1050\ \mathrm{m}
+\end{align*}
+
+For car B (constant $15\ \mathrm{m\,s^{-1}}$ for $0\le t\le 30$; then accelerates from $15$ to $25\ \mathrm{m\,s^{-1}}$ over $30\le t\le 40$):
+
+\begin{align*}
+s_{B1} &= v\Delta t=15\cdot 30=450\ \mathrm{m},\\[6pt]
+s_{B2} &= \tfrac{1}{2}(u+v)t=\tfrac{1}{2}(15+25)(40-30)=\tfrac{1}{2}\cdot 40\cdot 10=200\ \mathrm{m},\\
+s_B &= s_{B1}+s_{B2}=450+200=650\ \mathrm{m}
+\end{align*}
+
+Therefore the difference in the first 40 s is
+
+$$
+s_A-s_B=1050-650=400\ \mathrm{m},
+$$
+
+so car A travels $400\ \mathrm{m}$ further than car B in the first 40 seconds.
+
+</div>
+
++++
+
+<br>
+
+
+\((c)\) Given that car A is 500 m behind car B at $t=0$, at what value of $t$ does car A catch up with car B ?
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+From part (b), car A catches up 400 meters at \(t=40\) s. In other words, the gap has closed from 500 m to 100 m after 40 s.
+After that, both cars travel at constant speeds. Find the time taken for car A to close the remaining 100 m gap.
+
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Given that car A is initially $500\ \mathrm{m}$ behind car B, A catches B when the gap closes to zero.
+
+From the previous kinematic results at $t=40\ \mathrm{s}$:
+
+$$
+s_A(40)=1050\ \mathrm{m},\qquad s_B(40)=650\ \mathrm{m},
+$$
+
+so the separation closed in the first 40 s is
+
+$$
+s_A(40)-s_B(40)=400\ \mathrm{m}.
+$$
+
+Thus the remaining separation at $t=40\ \mathrm{s}$ is
+
+$$
+500-400=100\ \mathrm{m}.
+$$
+
+
+For $t\ge 40\ \mathrm{s}$ both cars move at constant speeds $v_A=30\ \mathrm{m\,s^{-1}}$ and $v_B=25\ \mathrm{m\,s^{-1}}$, so the relative speed is
+
+$$
+v_A-v_B=30-25=5\ \mathrm{m\,s^{-1}}.
+$$
+
+Time to close the remaining $100\ \mathrm{m}$ is
+
+$$
+\Delta t=\frac{100}{5}=20\ \mathrm{s}.
+$$
+
+
+Hence A catches B at
+
+$$
+t=40+\Delta t=40+20=60\ \mathrm{s}.
+$$
+
+
+Therefore car A catches car B at $t=60\ \mathrm{s}$.
+
+</div>
+
++++
+
+<br>
+
 
 </div>
 <p align="center">
