@@ -10,8 +10,124 @@ $$
 v=t^{3}-9 t^{2}+24 t, \quad 0 \leq t \leq 4 .
 $$
 (a) Find an expression for the distance travelled by the car in the first $t$ seconds.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+The speed is given by
+
+$$
+v=t^{3}-9t^{2}+24t,\qquad 0\le t\le 4.
+$$
+
+
+The distance travelled in the first $t$ seconds is
+
+$$
+s(t)=\int v\,dt=\int \bigl(t^{3}-9t^{2}+24t\bigr)\,dt
+=\frac{t^{4}}{4}-3t^{3}+12t^{2}.
+$$
+
+Thus
+
+$$
+s(t)=\frac{t^{4}}{4}-3t^{3}+12t^{2},\qquad 0\le t\le 4,
+$$
+
+with $s(t)$ in metres.
+
+</div>
+
++++
+
+<br>
+
 (b) Calculate the distance travelled from $t=2$ to $t=4$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Recall
+
+$$
+s(t)=\frac{t^{4}}{4}-3t^{3}+12t^{2}.
+$$
+
+
+Hence
+
+$$
+s(4)=\frac{4^{4}}{4}-3\cdot 4^{3}+12\cdot 4^{2}=64-192+192=64,
+$$
+
+and
+
+$$
+s(2)=\frac{2^{4}}{4}-3\cdot 2^{3}+12\cdot 2^{2}=4-24+48=28.
+$$
+
+
+The distance travelled from $t=2$ to $t=4$ is
+
+$$
+s(4)-s(2)=64-28=36\ \mathrm{m}.
+$$
+
+
+</div>
+
++++
+
+<br>
+
 \((c)\) Show that the acceleration, $a \mathrm{~ms}^{-2}$, of the car at time $t$ is given by $a=k(t-2)(t-4)$, where $k$ is a constant to be determined.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Differentiate v with respect to t:
+$$
+a=\frac{dv}{dt}=3t^{2}-18t+24.
+$$
+Factor out 3 and factor the quadratic:
+$$
+a=3\bigl(t^{2}-6t+8\bigr)=3(t-2)(t-4).
+$$
+Hence k=3.
+
+</div>
+
++++
+
+<br>
+
 2. A particle moves on the $x$-axis. Its displacement, $x \mathrm{~m}$, from the origin O is given by $x=3 t^{2}-3 t+2$, where $t$ is the time in seconds.
 
 How far is the particle from O when it is instantaneously at rest?
