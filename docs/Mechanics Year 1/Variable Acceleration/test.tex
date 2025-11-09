@@ -131,9 +131,163 @@ Hence k=3.
 2. A particle moves on the $x$-axis. Its displacement, $x \mathrm{~m}$, from the origin O is given by $x=3 t^{2}-3 t+2$, where $t$ is the time in seconds.
 
 How far is the particle from O when it is instantaneously at rest?
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Get the velocity by differentiating the displacement first. Then set the velocity to zero to find the time when the particle is at rest. Finally, substitute this time back into the displacement equation to find how far the particle is from O.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Differentiate $x$ with respect to $t$ to find the velocity $v$:
+$$
+v=\frac{dx}{dt}=6t-3
+$$
+Set $v=0$ to find when the particle is instantaneously at rest: 
+$$
+6t-3=0\implies t=\frac{1}{2}\ \mathrm{s}
+$$
+Substitute $t=\frac{1}{2}$ into the equation for $x$ to find the displacement from O:
+$$
+x=3\left(\frac{1}{2}\right)^{2}-3\left(\frac{1}{2}\right)+2=\frac{3}{4}-\frac{3}{2}+2=\frac{5}{4}\ \mathrm{m}
+$$
+The particle is $\frac{5}{4}\ \mathrm{m}$ from O when it is instantaneously at rest.
+
+</div>
+
++++
+
+<br>
+
 3. At $t=0$ a particle travels through point P with a velocity of $-9 \mathrm{~ms}^{-1}$. The acceleration of the particle is given by $a=0.6 t-3.9$.
 (a) Find the times when the velocity, $v$, is $-18 \mathrm{~ms}^{-1}$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+For variable acceleration, integrate the acceleration function to find the velocity function. Use the initial velocity condition to find the constant of integration. Then set the velocity function equal to -18 and solve for t.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Integrate the acceleration function to find the velocity function:
+$$
+v=\int a\,dt=\int (0.6t-3.9)\,dt=0.3t^{2}-3.9t+C
+$$
+Use the initial condition $v=-9$ when $t=0$ to find $C$:
+$$
+-9=0.3(0)^{2}-3.9(0)+C\implies C=-9
+$$
+Thus, the velocity function is:
+$$
+v=0.3t^{2}-3.9t-9
+$$
+Set $v=-18$ and solve for $t$:
+$$
+-18=0.3t^{2}-3.9t-9
+$$
+Rearranging gives:
+$$
+0.3t^{2}-3.9t+9=0
+$$
+Multiply through by 10 to eliminate decimals:
+$$
+3t^{2}-39t+90=0
+$$
+Using the quadratic formula:
+$$
+t=\frac{39\pm\sqrt{(-39)^{2}-4\cdot 3\cdot 90}}{2\cdot 3}=\frac{39\pm\sqrt{1521-1080}}{6}=\frac{39\pm\sqrt{441}}{6}=\frac{39\pm 21}{6}
+$$
+Thus, the two solutions for $t$ are:
+$$
+t=10\ \mathrm{s}\quad\text{or}\quad t=3\\mathrm{s}
+$$
+
+</div>
+
++++
+
+<br>
+
 (b) Find the distance covered by the particle when $v \leq-18 \mathrm{~ms}^{-1}$.
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+To find the distance covered when \( v \leq -18 \mathrm{~ms}^{-1} \), first determine the time intervals when this condition holds. Then, integrate the velocity function over these intervals to find the total distance traveled.
+Basically, the distance covered is the area under the velocity-time graph between the times when \( v = -18 \mathrm{~ms}^{-1} \).
+
+<p align="center">
+<img src="/assets/Mech1_Variable_acceleration_Q3.png" alt="drawing" width="500"/>
+</p>
+
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+<p align="center">
+<img src="/assets/Mech1_Variable_acceleration_Q3.png" alt="drawing" width="500"/>
+</p>
+
+From part (a), we found that \( v = -18 \mathrm{~ms}^{-1} \) at \( t = 3 \mathrm{s} \) and \( t = 10 \mathrm{s} \).
+To find the distance covered when \( v \leq -18 \mathrm{~ms}^{-1} \), we need to integrate the velocity function from \( t = 3 \mathrm{s} \) to \( t = 10 \mathrm{s} \).
+The velocity function is:
+$$
+v=0.3t^{2}-3.9t-9
+$$
+
+Integrate the velocity function to find the displacement:
+$$
+s=\int v\,dt=\int (0.3t^{2}-3.9t-9)\,dt=0.1t^{3}-1.95t^{2}-9t+C
+$$
+We can ignore the constant of integration \( C \) since we are calculating a definite integral. C will get canceled out.
+
+Now, calculate the displacement from \( t = 3 \mathrm{s} \) to \( t = 10 \mathrm{s} \):
+$$
+s(10)-s(3)=\left(0.1(10)^{3}-1.95(10)^{2}-9(10)\right)-\left(0.1(3)^{3}-1.95(3)^{2}-9(3)\right)
+$$
+Calculating each term:
+For \( t = 10 \):
+$$
+s(10)=0.1(1000)-1.95(100)-90=100-195-90=-185
+$$
+For \( t = 3 \):
+$$  
+s(3)=0.1(27)-1.95(9)-27=2.7-17.55-27=-41.85
+$$
+
+Now, find the distance covered, the area is under the x axis so it will be negative, we make it positive for distance:
+
+$$
+\vert s(10)-s(3)\vert=\vert -185-(-41.85) \vert=\vert -185+41.85 \vert =\vert -143.15 \vert\ \mathrm{m}
+$$
+
+The distance covered by the particle when \( v \leq -18 \mathrm{~ms}^{-1} \) is \( 143.15 \mathrm{~m} \).
+
+
+</div>
+
++++
+
+<br>
+
 4. An insect moves in a straight line. The time, $t$, is in seconds and distance travelled is in metres.
 
 The velocity, $v \mathrm{~ms}^{-1}$, of the insect is given by
@@ -147,9 +301,171 @@ $$
 
 You are also given that $v=4$ when $t=12$.
 (a) Show that $c=12$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+C is the constant velocity between \( t=6 \) and \( t=10 \). It is also the velocity at \( t=6 \) from the first equation. So, substitute \( t=6 \) into the first equation to find \( c \).
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+to find \( c \), we substitute \( t=6 \) into the first equation for velocity:
+$$
+v=6^{2}-4\cdot 6=36-24=12
+$$
+Thus, \( c=12 \)
+
+</div>
+
++++
+
+<br>
+
+
 (b) Calculate the values of $a$ and $b$ and briefly describe the motion of the insect in the interval $10 \leq t \leq 15$.
+
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+Need to setup two equations using the information given. One equation comes from the fact that the velocity at \( t=10 \) must equal \( c \), and the other comes from the fact that the velocity at \( t=12 \) is given as 4. Solve these two equations simultaneously to find \( a \) and \( b \).
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+From part (a), we have \( c=12 \).
+At \( t=10 \), the velocity from the third equation must equal \( c \):
+$$a\cdot 10 + b = 12 \quad (1)$$
+At \( t=12 \), the velocity is given as 4:
+$$a\cdot 12 + b = 4 \quad (2)$$
+Subtract equation (1) from equation (2):
+$$
+12a + b - (10a + b) = 4 - 12 \\
+2a = -8 \\  
+a = -4
+$$
+
+Substituting \( a=-4 \) into equation (1):
+$$
+-4\cdot 10 + b = 12 \\
+-40 + b = 12 \\
+b = 52
+$$
+Thus, \( a=-4 \) and \( b=52 \).
+The motion of the insect in the interval \( 10 \leq t \leq 15 \) is described by the equation:
+$$
+v=-4t + 52
+$$
+This indicates that the insect is *decelerating* linearly over this time period. The decelerating is *constant*.
+
+</div>
+
++++
+
+<br>
+
+
 \((c)\) Sketch the $v$ - $t$ curve for the motion of the insect in the interval $0 \leq t \leq 6$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+quadratic curve in the interval \( 0 \leq t \leq 6 \).
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech1_Variable_acceleration_Q4_C.png" alt="drawing" width="500"/>
+</p>
+
+
+</div>
+
++++
+
+<br>
+
+
 (d) Calculate the distance travelled by the insect in the interval $0 \leq t \leq 10$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+The distance travelled is the area under the velocity-time graph from \( t=0 \) to \( t=10 \). 
+There are two parts to this area: from \( t=0 \) to \( t=6 \) (which is a curve) and from \( t=6 \) to \( t=10 \) (which is a rectangle).
+First part can be found by integrating the velocity function from \( 0 \) to \( 6 \). But since between \(0\) and \(4\) the velocity is negative, we need to split the integral into two parts: from \(0\) to \(4\) and from \(4\) to \(6\).
+
+<p align="center">
+<img src="/assets/Mech1_Variable_acceleration_Q4_D.png" alt="drawing" width="500"/>
+</p>
+
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+<p align="center">
+<img src="/assets/Mech1_Variable_acceleration_Q4_D.png" alt="drawing" width="500"/>
+</p>
+
+Since between \(0\) and \(4\) the velocity is negative, we need to split the integral into two parts: from \(0\) to \(4\) and from \(4\) to \(6\).
+First, calculate the distance from \( t=0 \) to \( t=4 \):
+integrate the velocity function:
+$$
+s_1=\int_{0}^{4} (t^{2}-4t)\,dt=\left[\frac{t^{3}}{3}-2t^{2}\right]_{0}^{4}=\left(\frac{64}{3}-32\right)-0=-\frac{32}{3}\ \mathrm{m}
+$$
+The distance is the absolute value:
+$$
+\vert s_1 \vert = \frac{32}{3}\ \mathrm{m}
+$$
+
+Next, calculate the distance from \( t=4 \) to \( t=6 \):
+$$
+s_2=\int_{4}^{6} (t^{2}-4t)\,dt=\left[\frac{t^{3}}{3}-2t^{2}\right]_{4}^{6}=\left(\frac{216}{3}-72\right)-\left(\frac{64}{3}-32\right)=24-\left(-\frac{32}{3}\right)=24+\frac{32}{3}=\frac{104}{3}\ \mathrm{m}
+$$
+
+Now, calculate the distance from \( t=6 \) to \( t=10 \):
+The velocity is constant at \( c=12 \):
+$$
+s_3=12 \cdot (10-6)=48\ \mathrm{m}
+$$
+
+The total distance travelled from \( t=0 \) to \( t=10 \) is:
+$$
+s=\vert s_1 \vert + s_2 + s_3 = \frac{32}{3} + \frac{104}{3} + 48 = \frac{136}{3} + 48 = \frac{136}{3} + \frac{144}{3} = \frac{280}{3}\ \mathrm{m}
+$$
+
+</div>
+
++++
+
+<br>
+
 
 5. The motion of a particle is represented on the velocity time graph shown below. The motion is given by the equations:
 $$
@@ -162,6 +478,73 @@ $$
 
 The particle returns to its starting position at time $T$.
 Find the velocity of the particle at time $T$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+The particle returns to its starting position when the total displacement is zero. So we need to find the expressions for displacement by integrating the velocity function. Then, set the total displacement to zero and solve for \( T \).
+
+Then substitute \( T \) back into the velocity equation to find the velocity at time \( T \).
+
+There are two parts to the displacement: from \( t=0 \) to \( t=4 \) and from \( t=4 \) to \( t=T \). Will calculate each part separately.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+First compute the displacement from 0 to 4:
+\begin{align*}
+s(0\to4)&=\int_0^4\left(2t^2-3t-\tfrac{1}{3}t^3\right)dt\\
+&=\left[\tfrac{2}{3}t^3-\tfrac{3}{2}t^2-\tfrac{1}{12}t^4\right]_0^4\\
+&=-\tfrac{8}{3}.
+\end{align*}
+
+Displacement is negative, showing in the graph that the area are under x axis.
+
+Continuity of velocity at t=4 gives
+$$
+1.5\cdot4+c=2\cdot4^2-3\cdot4-\tfrac{1}{3}\cdot4^3=-\tfrac{4}{3},
+$$
+so
+$$
+c=-\tfrac{22}{3},
+$$
+and for $t≥4$ we have $v= \frac{2}{3}t− \frac{22}{3}$
+
+Let $T>4$ be the time the particle returns to the start. For the particle to return to original position, the integration (area) between 4 and T need to be:
+$$
+\int_4^T\left(\tfrac{3}{2}t-\tfrac{22}{3}\right)dt=+\tfrac{8}{3}.
+$$
+Evaluating the integral gives
+$$
+\tfrac{3}{4}T^2-\tfrac{22}{3}T=\tfrac{8}{3},
+$$
+hence
+$$
+9T^2-88T-32=0.
+$$
+The relevant root (with $T\ge4$) is
+$$
+T=\frac{44+4\sqrt{139}}{9}.
+$$
+
+Finally the velocity at T is
+\begin{align*}
+v(T)&=\tfrac{3}{2}T-\tfrac{22}{3}\\
+&=\frac{22+2\sqrt{139}}{3}-\frac{22}{3}=\frac{2\sqrt{139}}{3}.
+\end{align*}
+
+Numerically v(T)≈7.86 ms⁻¹.
+
+</div>
+
++++
+
 <br>
 
 </div>

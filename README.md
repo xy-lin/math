@@ -47,3 +47,8 @@ MikTex
 VokoscreenNG
 
 Xournal
+
+### Useful sites;
+https://www.desmos.com/calculator
+
+https://www.symbolab.com/calculator/math
