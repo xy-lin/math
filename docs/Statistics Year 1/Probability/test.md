@@ -748,7 +748,7 @@ foreignObject[data-mjx-xml] {
     <div id="container-ruller" />
     <div id="preview-content">
       <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/lawrence_of_arabia1.jpg" alt="drawing" width="500"/>
 </p>
 <div style="font-size: 22px;">
 <div><br><br></div>
@@ -852,7 +852,7 @@ foreignObject[data-mjx-xml] {
 <br></div>
 </div>
 <p align="center">
-<img src="/images/" alt="drawing" width="500"/>
+<img src="/images/lawrence_of_arabia2.jpg" alt="drawing" width="500"/>
 </p>
 
     </div>
