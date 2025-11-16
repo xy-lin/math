@@ -9,43 +9,436 @@
 1. $X \sim N(5,16)$
 (a) Draw a sketch of the distribution of $X$, indicating clearly the positions of the mean and the points of inflection.
 
-+++ <span style="color:blue">Hint</span>
-
-<hr style="border:1px solid red" >
-
-<hr style="border:1px solid red" >
-
-+++
-
-<br>
-
 +++ <span style="color:green">Solutions</span>
 
-<hr style="border:1px solid red" >
+<div style="font-size: 22px">
 
-<hr style="border:1px solid red" >
+<p align="center">
+<img src="/assets/Statistic 2 Normal Distribution Q1.png" alt="drawing" width="500"/>
+</p>
+
+</div>
 
 +++
 
 <br>
 
 (b) Write down the value of $\mathrm{P}(X \neq 2)$.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+For normal distributions, the probability of a continuous random variable taking any specific value is zero.
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find \( P(X \neq 2) \), we first calculate \( P(X = 2) \). However, since \( X \) is a continuous random variable, the probability of it taking any specific value is zero. Therefore, we have:
+$$
+P(X = 2) = 0
+$$
+Thus,
+$$
+P(X \neq 2) = 1 - P(X = 2) = 1 - 0 = 1
+$$
+
+</div>
+
++++
+
+<br>
+
 \((c)\) Find $\mathrm{P}(6<X<8)$.
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find \( P(6 < X < 8) \), we first standardize the variable \( X \) to convert it into a standard normal variable \( Z \). The mean \( \mu \) is 5 and the standard deviation \( \sigma \) is 4 (since the variance is 16).
+Calculating the z-scores for 6 and 8:
+$$
+z_1 = \frac{6 - 5}{4} = 0.25
+$$
+$$
+z_2 = \frac{8 - 5}{4} = 0.75
+$$
+Using standard normal distribution tables, we find the probabilities corresponding to these z-scores:
+$$  P(Z < 0.25) \approx 0.5987 $$
+$$  P(Z < 0.75) \approx 0.7734 $$
+
+The probability \( P(6 < X < 8) \) is then:
+
+$$
+P(6 < X < 8) = P(Z < 0.75) - P(Z < 0.25) = 0.7734 - 0.5987 = 0.1747
+$$
+
+</div>
+
++++
+
+<br>
+
 2. The weights of avocados are normally distributed normally with mean 204 g and standard deviation 25 g . The avocados are classified as small, medium or large. Large avocados weigh more than 220 g , small avocados weigh less than 180 g . All other avocados are classified as medium. Calculate, to one decimal place, the percentage of avocados in each grade.
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the percentage of avocados in each grade, we first calculate the z-scores for the weight limits of small and large avocados.
+Calculating the z-scores:
+$$
+z_{small} = \frac{180 - 204}{25} = -0.96
+$$
+$$
+z_{large} = \frac{220 - 204}{25} = 0.64
+$$
+Using standard normal distribution tables, we find the probabilities corresponding to these z-scores:
+$$  P(Z < -0.96) \approx 0.1685 $$
+$$  P(Z < 0.64) \approx 0.7389 $$
+The percentage of small avocados is:
+
+$$
+P(X < 180) = P(Z < -0.96) \approx 16.85\%
+$$
+
+The percentage of large avocados is:
+
+$$
+P(X > 220) = 1 - P(Z < 0.64) = 1 - 0.7389 = 0.2611 \approx 26.11\%
+$$
+
+The percentage of medium avocados is:
+
+$$
+P(180 < X < 220) = P(Z < 0.64) - P(Z < -0.96) = 0.7389 - 0.1685 = 0.5704 \approx 57.04\%
+$$
+
+</div>
+
++++
+
+<br>
+
 3. Components produced by a factory machine have masses that are normally distributed.
 (a) The machine is initially set so that the mean mass is 0.249 kg and standard deviation 0.005 kg . A component is required to have a mass within the limits 0.247 kg and 0.252 kg . Calculate to the nearest whole number the percentage of components produced that are outside the required limits.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the percentage of components outside the required limits, we first calculate the z-scores for the limits:
+$$
+z_1 = \frac{0.247 - 0.249}{0.005} = -0.4
+$$
+$$
+z_2 = \frac{0.252 - 0.249}{0.005} = 0.6
+$$
+Using standard normal distribution tables, we find the probabilities corresponding to these z-scores:
+$$  P(Z < -0.4) \approx 0.3446 $$
+$$  P(Z < 0.6) \approx 0.7257 $$
+
+The probability of a component being within the limits is:
+
+$$
+P(0.247 < X < 0.252) = P(Z < 0.6) - P(Z < -0.4) = 0.7257 - 0.3446 = 0.3811
+$$
+
+Thus, the percentage of components outside the required limits is:
+
+$$
+1 - 0.3811 = 0.6189 \text{ or } 61.89\%
+$$
+
+
+
+</div>
+
++++
+
+<br>
+
 (b) The machine is now set so that the mean mass is $\mu \mathrm{kg}$, the standard deviation still being 0.005 kg . Given that $10 \%$ of the components now have masses greater than 0.252 kg , find $\mu$ to 3 decimal places.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To find the mean mass $\mu$ such that 10% of the components have masses greater than 0.252 kg, we first determine the z-score corresponding to the upper 10% of the standard normal distribution.
+We want P(X > 0.252) = 0.10 for X ~ N(μ, 0.005^2). Let Z be standard normal. 
+
+Equivalently, we have 
+
+$$
+P( Z >   \frac{0.252-\mu}{0.005}) = 0.10
+$$
+
+Then, Equivalently, we have 
+
+$$
+P(Z ≤ \frac{0.252-\mu}{0.005}) = 0.90
+$$
+
+so
+
+$$
+\frac{0.252-\mu}{0.005}=z_{0.90}\approx 1.28155.
+$$
+Hence
+$$
+\mu=0.252-0.005\times1.28155\approx0.245592.
+$$
+To three decimal places, μ = 0.246 kg.
+
+</div>
+
++++
+
+<br>
+
 4. A survey of 200 workers to look at their commuting time, $X$ minutes, had the following results:
 $$
 \sum x=10840, \sum x^{2}=597560
 $$
 (a) Calculate the mean and the standard deviation of $X$
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+mean \( \bar{x} = \frac{\sum x}{n} = \frac{10840}{200} = 54.2 \) minutes
+Using the formula for standard deviation:
+\[s = \sqrt{\frac{\sum x^2-\frac{\sum{x^2}}{n}}{n-1}}\]
+\[s = \sqrt{\frac{597560 - \frac{(10840)^2}{200}}{199}} = \sqrt{\frac{597560 - 58756}{199}} = \sqrt{\frac{538804}{199}} \approx 52.0\] minutes
+
+</div>
+
++++
+
+<br>
+
 (b) It is initially assumed that $X$ can be modelled as a normal distribution.
+
 (i) Calculate, to 3 significant figures, the probability that a commuter chosen at random has a commuting time of less than 45 minutes.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Calculate the Z score for 45 minutes:
+$$Z = \frac{X - \mu}{\sigma} = \frac{45 - 54.2}{s} = \frac{45 - 54.2}{52.0} \approx -0.1769$$
+Using standard normal distribution tables, we find the probability corresponding to this Z score:
+$$P(Z < -0.1769) \approx 0.430$$
+
+</div>
+
++++
+
+<br>
+
 (ii) The 200 commuters are put into groups of 20. Calculate, to 2 significant figures, the probability that in a randomly selected group, fewer than 5 of them will have a commuting time of less than 45 minutes.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+First find the probability for a single commuter to have a commuting time of less than 45 minutes, which we calculated in part (i) as approximately 0.43.:
+$$
+p = P(X<45) = \approx0.43.
+$$
+
+We will need to use the binomial distribution here.
+
+Let Y be the number in a group of 20 with commuting time <45 minutes. Then Y∼Bin(20,p) and
+$$
+P(Y<5)=\sum_{k=0}^{4}\binom{20}{k} p^{k}(1-p)^{20-k}.
+$$
+
+Evaluating this with p≈0.4298 gives
+$$
+P(Y<5)\approx 0.0293.
+$$
+
+To 2 significant figures this is 0.029 (≈2.9%).
+
+</div>
+
++++
+
+<br>
+
 \((c)\) When an additional question is asked in the survey it is found that 10 of the 200 workers have a commuting time of more than an hour and a half. Determine with a reason whether the normal distribution is suitable to model this data.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+To determine if the normal distribution is suitable, we can calculate the probability of a commuting time greater than 90 minutes using the normal distribution with the mean and standard deviation calculated in part (a).
+Calculate the Z score for 90 minutes:
+$$Z = \frac{90 - 54.2}{52.0} \approx 0.6885$$
+Using standard normal distribution tables, we find the probability corresponding to this Z score:
+$$P(Z > 0.6885) \approx 0.246$$
+This means that approximately 24.6% of commuters are expected to have a commuting time greater than 90 minutes. However, in the survey, only 10 out of 200 workers (5%) reported a commuting time of more than an hour and a half. This significant discrepancy suggests that the normal distribution may not be suitable for modeling this data.
+
+
+</div>
+
++++
+
+<br>
+
 5. (a) The volume, $L$ litres, of a tub of one brand of paint may be assumed to be normally distributed. $40 \%$ of the tubs contain less than 10.2 litres of paint and $98 \%$ of tubs contain more than 10 litres of emulsion paint. Find the mean and the standard deviation to 2 decimal places.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+Let X ~ N(μ, σ^2). From the information:
+
+P(X < 10.2) = 0.4 ⇒ z1 =  ≈ −0.2533471031,
+P(X > 10) = 0.98 ⇒ P(X ≤ 10) = 0.02 ⇒ z2 ≈ −2.0537489106.
+
+We have
+$$
+z_1=\frac{10.2-\mu}{\sigma},\qquad
+z_2=\frac{10-\mu}{\sigma}.
+$$
+Subtracting gives
+$$
+0.2=(z_1-z_2)\sigma\quad\Rightarrow\quad
+\sigma=\frac{0.2}{z_1-z_2}.
+$$
+Numerically,
+$$
+\sigma=\frac{0.2}{-0.2533471031-(-2.0537489106)}\approx0.11111\approx0.11.
+$$
+Then
+$$
+\mu=10.2-z_1\sigma\approx10.2-(-0.2533471031)(0.11111)\approx10.22815\approx10.23.
+$$
+Answers (to 2 decimal places): mean μ = 10.23 litres, standard deviation σ = 0.11 litres.
+
+</div>
+
++++
+
+<br>
+
 (b) The volume, $P$ litres, of a tub of another brand of paint is normally distributed with a mean of 10.15 and a standard deviation of 0.1 . A case contains 12 tubs of paint. Find, to 2 decimal places, the probability that fewer than 3 tubs contain less than 10 litres of paint.
+
++++ <span style="color:blue">Hint</span>
+
+<div style="font-size: 22px;">
+
+</div>
+
++++
+
++++ <span style="color:green">Solutions</span>
+
+<div style="font-size: 22px">
+
+First find the single‑tub probability:
+$$
+(z=\frac{10-10.15}{0.1}=-1.5)
+$$
+
+so
+$$
+p=P(P<10)= P(z < -1.5)\approx0.06681
+$$
+
+We need to use the binomial distribution here.
+
+Let $Y\sim\mathrm{B}(12,p)$
+
+Then
+
+$$
+P(Y<3)=\sum_{k=0}^{2}\binom{12}{k}p^{k}(1-p)^{12-k}.
+$$
+
+Evaluating the three terms:
+
+\begin{aligned}
+P(Y=0)&=(1-p)^{12}\approx0.43618\\
+P(Y=1)&=12p(1-p)^{11}\approx0.37475\\
+P(Y=2)&=\binom{12}{2}p^{2}(1-p)^{10}\approx0.14745
+\end{aligned}
+
+So
+
+$$
+P(Y<3)\approx0.43618+0.37475+0.14745\approx0.95838
+$$
+To 2 decimal places the probability is 0.96.
+
+</div>
+
++++
+
+<br>
 
 <br>
 
